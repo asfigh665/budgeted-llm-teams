@@ -1,0 +1,4731 @@
+{
+  "conventions": {
+    "holm_families": {
+      "allocation_three_minus_two": 12,
+      "allocation_two_minus_single": 6,
+      "weighted_minus_onecoin": 12,
+      "onecoin_minus_majority": 12,
+      "multicoin_minus_onecoin": 4
+    }
+  },
+  "benchmarks": {
+    "mmlu_pro": {
+      "n": 444,
+      "n_cal": 222,
+      "n_eval": 222,
+      "calibration_qids": [
+        "mmlu_pro:100",
+        "mmlu_pro:102",
+        "mmlu_pro:107",
+        "mmlu_pro:109",
+        "mmlu_pro:111",
+        "mmlu_pro:115",
+        "mmlu_pro:116",
+        "mmlu_pro:120",
+        "mmlu_pro:122",
+        "mmlu_pro:124",
+        "mmlu_pro:126",
+        "mmlu_pro:131",
+        "mmlu_pro:132",
+        "mmlu_pro:135",
+        "mmlu_pro:140",
+        "mmlu_pro:142",
+        "mmlu_pro:151",
+        "mmlu_pro:152",
+        "mmlu_pro:156",
+        "mmlu_pro:159",
+        "mmlu_pro:160",
+        "mmlu_pro:166",
+        "mmlu_pro:170",
+        "mmlu_pro:171",
+        "mmlu_pro:176",
+        "mmlu_pro:177",
+        "mmlu_pro:178",
+        "mmlu_pro:181",
+        "mmlu_pro:182",
+        "mmlu_pro:186",
+        "mmlu_pro:193",
+        "mmlu_pro:194",
+        "mmlu_pro:195",
+        "mmlu_pro:196",
+        "mmlu_pro:197",
+        "mmlu_pro:198",
+        "mmlu_pro:203",
+        "mmlu_pro:204",
+        "mmlu_pro:207",
+        "mmlu_pro:208",
+        "mmlu_pro:212",
+        "mmlu_pro:215",
+        "mmlu_pro:224",
+        "mmlu_pro:225",
+        "mmlu_pro:226",
+        "mmlu_pro:233",
+        "mmlu_pro:234",
+        "mmlu_pro:237",
+        "mmlu_pro:238",
+        "mmlu_pro:239",
+        "mmlu_pro:246",
+        "mmlu_pro:248",
+        "mmlu_pro:251",
+        "mmlu_pro:264",
+        "mmlu_pro:266",
+        "mmlu_pro:270",
+        "mmlu_pro:273",
+        "mmlu_pro:276",
+        "mmlu_pro:277",
+        "mmlu_pro:280",
+        "mmlu_pro:282",
+        "mmlu_pro:284",
+        "mmlu_pro:287",
+        "mmlu_pro:288",
+        "mmlu_pro:289",
+        "mmlu_pro:292",
+        "mmlu_pro:293",
+        "mmlu_pro:295",
+        "mmlu_pro:296",
+        "mmlu_pro:297",
+        "mmlu_pro:300",
+        "mmlu_pro:302",
+        "mmlu_pro:303",
+        "mmlu_pro:304",
+        "mmlu_pro:306",
+        "mmlu_pro:308",
+        "mmlu_pro:310",
+        "mmlu_pro:311",
+        "mmlu_pro:315",
+        "mmlu_pro:320",
+        "mmlu_pro:321",
+        "mmlu_pro:322",
+        "mmlu_pro:323",
+        "mmlu_pro:325",
+        "mmlu_pro:326",
+        "mmlu_pro:328",
+        "mmlu_pro:329",
+        "mmlu_pro:332",
+        "mmlu_pro:333",
+        "mmlu_pro:334",
+        "mmlu_pro:335",
+        "mmlu_pro:337",
+        "mmlu_pro:338",
+        "mmlu_pro:339",
+        "mmlu_pro:340",
+        "mmlu_pro:343",
+        "mmlu_pro:344",
+        "mmlu_pro:345",
+        "mmlu_pro:346",
+        "mmlu_pro:350",
+        "mmlu_pro:351",
+        "mmlu_pro:354",
+        "mmlu_pro:356",
+        "mmlu_pro:360",
+        "mmlu_pro:361",
+        "mmlu_pro:363",
+        "mmlu_pro:365",
+        "mmlu_pro:366",
+        "mmlu_pro:368",
+        "mmlu_pro:371",
+        "mmlu_pro:372",
+        "mmlu_pro:374",
+        "mmlu_pro:376",
+        "mmlu_pro:380",
+        "mmlu_pro:383",
+        "mmlu_pro:386",
+        "mmlu_pro:388",
+        "mmlu_pro:394",
+        "mmlu_pro:395",
+        "mmlu_pro:396",
+        "mmlu_pro:402",
+        "mmlu_pro:404",
+        "mmlu_pro:410",
+        "mmlu_pro:411",
+        "mmlu_pro:416",
+        "mmlu_pro:417",
+        "mmlu_pro:418",
+        "mmlu_pro:419",
+        "mmlu_pro:423",
+        "mmlu_pro:428",
+        "mmlu_pro:429",
+        "mmlu_pro:430",
+        "mmlu_pro:431",
+        "mmlu_pro:433",
+        "mmlu_pro:434",
+        "mmlu_pro:436",
+        "mmlu_pro:439",
+        "mmlu_pro:441",
+        "mmlu_pro:444",
+        "mmlu_pro:445",
+        "mmlu_pro:446",
+        "mmlu_pro:449",
+        "mmlu_pro:451",
+        "mmlu_pro:452",
+        "mmlu_pro:456",
+        "mmlu_pro:457",
+        "mmlu_pro:458",
+        "mmlu_pro:459",
+        "mmlu_pro:460",
+        "mmlu_pro:462",
+        "mmlu_pro:463",
+        "mmlu_pro:464",
+        "mmlu_pro:466",
+        "mmlu_pro:467",
+        "mmlu_pro:468",
+        "mmlu_pro:471",
+        "mmlu_pro:472",
+        "mmlu_pro:473",
+        "mmlu_pro:474",
+        "mmlu_pro:475",
+        "mmlu_pro:476",
+        "mmlu_pro:477",
+        "mmlu_pro:479",
+        "mmlu_pro:482",
+        "mmlu_pro:484",
+        "mmlu_pro:485",
+        "mmlu_pro:486",
+        "mmlu_pro:487",
+        "mmlu_pro:488",
+        "mmlu_pro:490",
+        "mmlu_pro:492",
+        "mmlu_pro:493",
+        "mmlu_pro:494",
+        "mmlu_pro:495",
+        "mmlu_pro:496",
+        "mmlu_pro:501",
+        "mmlu_pro:505",
+        "mmlu_pro:506",
+        "mmlu_pro:511",
+        "mmlu_pro:512",
+        "mmlu_pro:515",
+        "mmlu_pro:518",
+        "mmlu_pro:519",
+        "mmlu_pro:525",
+        "mmlu_pro:526",
+        "mmlu_pro:527",
+        "mmlu_pro:529",
+        "mmlu_pro:530",
+        "mmlu_pro:531",
+        "mmlu_pro:539",
+        "mmlu_pro:541",
+        "mmlu_pro:542",
+        "mmlu_pro:543",
+        "mmlu_pro:546",
+        "mmlu_pro:547",
+        "mmlu_pro:550",
+        "mmlu_pro:551",
+        "mmlu_pro:552",
+        "mmlu_pro:557",
+        "mmlu_pro:563",
+        "mmlu_pro:566",
+        "mmlu_pro:568",
+        "mmlu_pro:571",
+        "mmlu_pro:573",
+        "mmlu_pro:577",
+        "mmlu_pro:578",
+        "mmlu_pro:580",
+        "mmlu_pro:581",
+        "mmlu_pro:583",
+        "mmlu_pro:584",
+        "mmlu_pro:585",
+        "mmlu_pro:71",
+        "mmlu_pro:73",
+        "mmlu_pro:78",
+        "mmlu_pro:79",
+        "mmlu_pro:80",
+        "mmlu_pro:81",
+        "mmlu_pro:86",
+        "mmlu_pro:87",
+        "mmlu_pro:88",
+        "mmlu_pro:90",
+        "mmlu_pro:91"
+      ],
+      "evaluation_qids": [
+        "mmlu_pro:101",
+        "mmlu_pro:104",
+        "mmlu_pro:108",
+        "mmlu_pro:112",
+        "mmlu_pro:114",
+        "mmlu_pro:119",
+        "mmlu_pro:125",
+        "mmlu_pro:128",
+        "mmlu_pro:129",
+        "mmlu_pro:133",
+        "mmlu_pro:134",
+        "mmlu_pro:136",
+        "mmlu_pro:137",
+        "mmlu_pro:138",
+        "mmlu_pro:145",
+        "mmlu_pro:147",
+        "mmlu_pro:148",
+        "mmlu_pro:149",
+        "mmlu_pro:154",
+        "mmlu_pro:163",
+        "mmlu_pro:165",
+        "mmlu_pro:168",
+        "mmlu_pro:173",
+        "mmlu_pro:174",
+        "mmlu_pro:175",
+        "mmlu_pro:179",
+        "mmlu_pro:180",
+        "mmlu_pro:184",
+        "mmlu_pro:187",
+        "mmlu_pro:192",
+        "mmlu_pro:201",
+        "mmlu_pro:202",
+        "mmlu_pro:205",
+        "mmlu_pro:206",
+        "mmlu_pro:209",
+        "mmlu_pro:210",
+        "mmlu_pro:211",
+        "mmlu_pro:214",
+        "mmlu_pro:216",
+        "mmlu_pro:218",
+        "mmlu_pro:222",
+        "mmlu_pro:227",
+        "mmlu_pro:228",
+        "mmlu_pro:229",
+        "mmlu_pro:232",
+        "mmlu_pro:235",
+        "mmlu_pro:240",
+        "mmlu_pro:241",
+        "mmlu_pro:242",
+        "mmlu_pro:243",
+        "mmlu_pro:244",
+        "mmlu_pro:249",
+        "mmlu_pro:250",
+        "mmlu_pro:252",
+        "mmlu_pro:253",
+        "mmlu_pro:254",
+        "mmlu_pro:255",
+        "mmlu_pro:256",
+        "mmlu_pro:257",
+        "mmlu_pro:258",
+        "mmlu_pro:259",
+        "mmlu_pro:261",
+        "mmlu_pro:268",
+        "mmlu_pro:269",
+        "mmlu_pro:271",
+        "mmlu_pro:272",
+        "mmlu_pro:278",
+        "mmlu_pro:281",
+        "mmlu_pro:283",
+        "mmlu_pro:286",
+        "mmlu_pro:290",
+        "mmlu_pro:291",
+        "mmlu_pro:294",
+        "mmlu_pro:298",
+        "mmlu_pro:299",
+        "mmlu_pro:301",
+        "mmlu_pro:305",
+        "mmlu_pro:307",
+        "mmlu_pro:309",
+        "mmlu_pro:312",
+        "mmlu_pro:313",
+        "mmlu_pro:314",
+        "mmlu_pro:316",
+        "mmlu_pro:317",
+        "mmlu_pro:318",
+        "mmlu_pro:319",
+        "mmlu_pro:324",
+        "mmlu_pro:327",
+        "mmlu_pro:330",
+        "mmlu_pro:331",
+        "mmlu_pro:336",
+        "mmlu_pro:341",
+        "mmlu_pro:342",
+        "mmlu_pro:347",
+        "mmlu_pro:348",
+        "mmlu_pro:349",
+        "mmlu_pro:352",
+        "mmlu_pro:353",
+        "mmlu_pro:355",
+        "mmlu_pro:357",
+        "mmlu_pro:358",
+        "mmlu_pro:359",
+        "mmlu_pro:362",
+        "mmlu_pro:364",
+        "mmlu_pro:369",
+        "mmlu_pro:370",
+        "mmlu_pro:373",
+        "mmlu_pro:375",
+        "mmlu_pro:377",
+        "mmlu_pro:378",
+        "mmlu_pro:379",
+        "mmlu_pro:381",
+        "mmlu_pro:382",
+        "mmlu_pro:384",
+        "mmlu_pro:385",
+        "mmlu_pro:387",
+        "mmlu_pro:389",
+        "mmlu_pro:390",
+        "mmlu_pro:391",
+        "mmlu_pro:392",
+        "mmlu_pro:393",
+        "mmlu_pro:397",
+        "mmlu_pro:398",
+        "mmlu_pro:399",
+        "mmlu_pro:400",
+        "mmlu_pro:401",
+        "mmlu_pro:403",
+        "mmlu_pro:405",
+        "mmlu_pro:406",
+        "mmlu_pro:407",
+        "mmlu_pro:408",
+        "mmlu_pro:409",
+        "mmlu_pro:412",
+        "mmlu_pro:413",
+        "mmlu_pro:414",
+        "mmlu_pro:415",
+        "mmlu_pro:420",
+        "mmlu_pro:421",
+        "mmlu_pro:422",
+        "mmlu_pro:424",
+        "mmlu_pro:425",
+        "mmlu_pro:426",
+        "mmlu_pro:435",
+        "mmlu_pro:437",
+        "mmlu_pro:438",
+        "mmlu_pro:440",
+        "mmlu_pro:442",
+        "mmlu_pro:443",
+        "mmlu_pro:447",
+        "mmlu_pro:448",
+        "mmlu_pro:450",
+        "mmlu_pro:453",
+        "mmlu_pro:454",
+        "mmlu_pro:455",
+        "mmlu_pro:461",
+        "mmlu_pro:465",
+        "mmlu_pro:469",
+        "mmlu_pro:470",
+        "mmlu_pro:478",
+        "mmlu_pro:480",
+        "mmlu_pro:481",
+        "mmlu_pro:483",
+        "mmlu_pro:489",
+        "mmlu_pro:491",
+        "mmlu_pro:497",
+        "mmlu_pro:498",
+        "mmlu_pro:499",
+        "mmlu_pro:500",
+        "mmlu_pro:502",
+        "mmlu_pro:503",
+        "mmlu_pro:504",
+        "mmlu_pro:507",
+        "mmlu_pro:508",
+        "mmlu_pro:509",
+        "mmlu_pro:510",
+        "mmlu_pro:513",
+        "mmlu_pro:514",
+        "mmlu_pro:516",
+        "mmlu_pro:517",
+        "mmlu_pro:520",
+        "mmlu_pro:521",
+        "mmlu_pro:522",
+        "mmlu_pro:523",
+        "mmlu_pro:524",
+        "mmlu_pro:528",
+        "mmlu_pro:532",
+        "mmlu_pro:533",
+        "mmlu_pro:534",
+        "mmlu_pro:535",
+        "mmlu_pro:536",
+        "mmlu_pro:538",
+        "mmlu_pro:540",
+        "mmlu_pro:544",
+        "mmlu_pro:545",
+        "mmlu_pro:548",
+        "mmlu_pro:549",
+        "mmlu_pro:553",
+        "mmlu_pro:554",
+        "mmlu_pro:555",
+        "mmlu_pro:558",
+        "mmlu_pro:559",
+        "mmlu_pro:560",
+        "mmlu_pro:561",
+        "mmlu_pro:562",
+        "mmlu_pro:564",
+        "mmlu_pro:565",
+        "mmlu_pro:567",
+        "mmlu_pro:569",
+        "mmlu_pro:570",
+        "mmlu_pro:572",
+        "mmlu_pro:574",
+        "mmlu_pro:575",
+        "mmlu_pro:576",
+        "mmlu_pro:579",
+        "mmlu_pro:582",
+        "mmlu_pro:587",
+        "mmlu_pro:76",
+        "mmlu_pro:85",
+        "mmlu_pro:92",
+        "mmlu_pro:94",
+        "mmlu_pro:95",
+        "mmlu_pro:98"
+      ],
+      "order": [
+        "llama",
+        "qwen",
+        "mistral"
+      ],
+      "cal9": {
+        "qwen": 0.5540540540540541,
+        "llama": 0.5765765765765766,
+        "mistral": 0.25675675675675674
+      },
+      "rel_cal": {
+        "llama": 0.5982698691226274,
+        "qwen": 0.7578275515509895
+      },
+      "calibration_calls": 5994,
+      "allocation": {
+        "6": {
+          "budget": 6,
+          "splits": {
+            "two": {
+              "llama": 3,
+              "qwen": 3
+            },
+            "three": {
+              "llama": 2,
+              "qwen": 2,
+              "mistral": 2
+            }
+          },
+          "two": 0.6261261261261262,
+          "three": 0.581081081081081,
+          "three_minus_two": {
+            "delta": -0.04504504504504504,
+            "ci": [
+              -0.0990990990990991,
+              0.009009009009009009
+            ],
+            "p": 0.14330665429588407,
+            "p_holm": 0.4299199628876522,
+            "holm_family_size": 12
+          },
+          "single": 0.5900900900900901,
+          "two_minus_single": {
+            "delta": 0.036036036036036036,
+            "ci": [
+              -0.009009009009009009,
+              0.08108108108108109
+            ],
+            "p": 0.16863754391670227,
+            "p_holm": 0.8431877195835114,
+            "holm_family_size": 6
+          },
+          "single_model": "qwen",
+          "single_arms": {
+            "qwen": 0.5900900900900901,
+            "llama": 0.5585585585585585,
+            "mistral": 0.27927927927927926
+          }
+        },
+        "9": {
+          "budget": 9,
+          "splits": {
+            "two": {
+              "llama": 5,
+              "qwen": 4
+            },
+            "three": {
+              "llama": 3,
+              "qwen": 3,
+              "mistral": 3
+            }
+          },
+          "two": 0.6621621621621622,
+          "three": 0.5990990990990991,
+          "three_minus_two": {
+            "delta": -0.06306306306306306,
+            "ci": [
+              -0.11261261261261261,
+              -0.018018018018018018
+            ],
+            "p": 0.016124801710247993,
+            "p_holm": 0.17737281881272793,
+            "holm_family_size": 12
+          },
+          "single": 0.5900900900900901,
+          "two_minus_single": {
+            "delta": 0.07207207207207207,
+            "ci": [
+              0.02252252252252252,
+              0.12612612612612611
+            ],
+            "p": 0.011330984183587134,
+            "p_holm": 0.0679859051015228,
+            "holm_family_size": 6
+          },
+          "single_model": "qwen",
+          "single_arms": {
+            "qwen": 0.5900900900900901,
+            "llama": 0.5720720720720721,
+            "mistral": 0.27927927927927926
+          }
+        },
+        "12": {
+          "budget": 12,
+          "splits": {
+            "two": {
+              "llama": 6,
+              "qwen": 6
+            },
+            "three": {
+              "llama": 4,
+              "qwen": 4,
+              "mistral": 4
+            }
+          },
+          "two": 0.6621621621621622,
+          "three": 0.5990990990990991,
+          "three_minus_two": {
+            "delta": -0.06306306306306306,
+            "ci": [
+              -0.11272522522522518,
+              -0.013513513513513514
+            ],
+            "p": 0.024306510109454393,
+            "p_holm": 0.21875859098508954,
+            "holm_family_size": 12
+          },
+          "single": null,
+          "two_minus_single": null
+        },
+        "18": {
+          "budget": 18,
+          "splits": {
+            "two": {
+              "llama": 9,
+              "qwen": 9
+            },
+            "three": {
+              "llama": 6,
+              "qwen": 6,
+              "mistral": 6
+            }
+          },
+          "two": 0.6756756756756757,
+          "three": 0.6126126126126126,
+          "three_minus_two": {
+            "delta": -0.06306306306306306,
+            "ci": [
+              -0.11261261261261261,
+              -0.013513513513513514
+            ],
+            "p": 0.028816719655878842,
+            "p_holm": 0.21875859098508954,
+            "holm_family_size": 12
+          },
+          "single": null,
+          "two_minus_single": null
+        }
+      },
+      "fixed_pools": {
+        "2x4": {
+          "budget": 8,
+          "split": {
+            "llama": 4,
+            "qwen": 4
+          },
+          "majority": 0.6441441441441441,
+          "onecoin": 0.6756756756756757,
+          "cal_weighted": 0.6756756756756757,
+          "reliabilities": {
+            "llama": 0.6300340300865171,
+            "qwen": 0.7762559652362404
+          },
+          "coverage_ceiling": 0.8198198198198198,
+          "member_selection_oracle": 0.7117117117117117,
+          "gap_coverage": 0.14414414414414412,
+          "gap_member": 0.036036036036036,
+          "weighted_minus_onecoin": {
+            "delta": 0.0,
+            "ci": [
+              -0.03153153153153153,
+              0.03153153153153153
+            ],
+            "p": 1.0,
+            "p_holm": 1.0,
+            "holm_family_size": 12
+          },
+          "onecoin_minus_majority": {
+            "delta": 0.03153153153153153,
+            "ci": [
+              0.009009009009009009,
+              0.05855855855855856
+            ],
+            "p": 0.0390625,
+            "p_holm": 0.46875,
+            "holm_family_size": 12
+          },
+          "multi_coin": 0.6666666666666666,
+          "multicoin_minus_onecoin": {
+            "delta": -0.009009009009009009,
+            "ci": [
+              -0.036036036036036036,
+              0.018018018018018018
+            ],
+            "p": 0.75390625,
+            "p_holm": 1.0,
+            "holm_family_size": 4
+          }
+        },
+        "3x3": {
+          "budget": 9,
+          "split": {
+            "llama": 3,
+            "qwen": 3,
+            "mistral": 3
+          },
+          "majority": 0.5990990990990991,
+          "onecoin": 0.6441441441441441,
+          "cal_weighted": 0.6486486486486487,
+          "reliabilities": {
+            "llama": 0.6661949271173384,
+            "qwen": 0.7050385653410588,
+            "mistral": 0.4306996927127454
+          },
+          "coverage_ceiling": 0.8243243243243243,
+          "member_selection_oracle": 0.7522522522522522,
+          "gap_coverage": 0.18018018018018023,
+          "gap_member": 0.10810810810810811,
+          "weighted_minus_onecoin": {
+            "delta": 0.0045045045045045045,
+            "ci": [
+              -0.018018018018018018,
+              0.02702702702702703
+            ],
+            "p": 1.0,
+            "p_holm": 1.0,
+            "holm_family_size": 12
+          },
+          "onecoin_minus_majority": {
+            "delta": 0.04504504504504504,
+            "ci": [
+              0.009009009009009009,
+              0.08558558558558559
+            ],
+            "p": 0.04138946533203125,
+            "p_holm": 0.46875,
+            "holm_family_size": 12
+          },
+          "multi_coin": 0.6036036036036037,
+          "multicoin_minus_onecoin": {
+            "delta": -0.04054054054054054,
+            "ci": [
+              -0.08108108108108109,
+              -0.0045045045045045045
+            ],
+            "p": 0.049041748046875,
+            "p_holm": 0.1961669921875,
+            "holm_family_size": 4
+          }
+        },
+        "2x9": {
+          "budget": 18,
+          "split": {
+            "llama": 9,
+            "qwen": 9
+          },
+          "majority": 0.6756756756756757,
+          "onecoin": 0.6846846846846847,
+          "cal_weighted": 0.6891891891891891,
+          "reliabilities": {
+            "llama": 0.62687881535649,
+            "qwen": 0.7307638059937092
+          },
+          "coverage_ceiling": 0.9144144144144144,
+          "member_selection_oracle": 0.7162162162162162,
+          "gap_coverage": 0.22972972972972971,
+          "gap_member": 0.03153153153153154,
+          "weighted_minus_onecoin": {
+            "delta": 0.0045045045045045045,
+            "ci": [
+              -0.013513513513513514,
+              0.02252252252252252
+            ],
+            "p": 1.0,
+            "p_holm": 1.0,
+            "holm_family_size": 12
+          },
+          "onecoin_minus_majority": {
+            "delta": 0.009009009009009009,
+            "ci": [
+              -0.009009009009009009,
+              0.02702702702702703
+            ],
+            "p": 0.625,
+            "p_holm": 1.0,
+            "holm_family_size": 12
+          },
+          "multi_coin": 0.6756756756756757,
+          "multicoin_minus_onecoin": {
+            "delta": -0.009009009009009009,
+            "ci": [
+              -0.03153153153153153,
+              0.013513513513513514
+            ],
+            "p": 0.7265625,
+            "p_holm": 1.0,
+            "holm_family_size": 4
+          }
+        },
+        "3x9": {
+          "budget": 27,
+          "split": {
+            "llama": 9,
+            "qwen": 9,
+            "mistral": 9
+          },
+          "majority": 0.5945945945945946,
+          "onecoin": 0.6081081081081081,
+          "cal_weighted": 0.6756756756756757,
+          "reliabilities": {
+            "llama": 0.6168919003084239,
+            "qwen": 0.6308123967579947,
+            "mistral": 0.535183665590619
+          },
+          "coverage_ceiling": 0.9279279279279279,
+          "member_selection_oracle": 0.7567567567567568,
+          "gap_coverage": 0.3198198198198198,
+          "gap_member": 0.14864864864864868,
+          "weighted_minus_onecoin": {
+            "delta": 0.06756756756756757,
+            "ci": [
+              0.036036036036036036,
+              0.1036036036036036
+            ],
+            "p": 6.103515625e-05,
+            "p_holm": 0.000732421875,
+            "holm_family_size": 12
+          },
+          "onecoin_minus_majority": {
+            "delta": 0.013513513513513514,
+            "ci": [
+              -0.009009009009009009,
+              0.036036036036036036
+            ],
+            "p": 0.453125,
+            "p_holm": 1.0,
+            "holm_family_size": 12
+          },
+          "multi_coin": 0.6081081081081081,
+          "multicoin_minus_onecoin": {
+            "delta": 0.0,
+            "ci": [
+              -0.03153153153153153,
+              0.03153153153153153
+            ],
+            "p": 1.0,
+            "p_holm": 1.0,
+            "holm_family_size": 4
+          }
+        }
+      },
+      "stopping": {
+        "single9_reference": {
+          "model": "qwen",
+          "accuracy": 0.5900900900900901,
+          "arms": {
+            "qwen": 0.5900900900900901,
+            "llama": 0.5720720720720721,
+            "mistral": 0.27927927927927926
+          },
+          "selection": "post-hoc strongest eval arm"
+        },
+        "team18_reference": 0.6756756756756757,
+        "posterior_grid": [
+          {
+            "theta": 0.5,
+            "n_min": 2,
+            "cost": 2.1216216216216215,
+            "accuracy": 0.5405405405405406,
+            "calibration_cost": 2.234234234234234,
+            "calibration_accuracy": 0.5585585585585585
+          },
+          {
+            "theta": 0.5,
+            "n_min": 3,
+            "cost": 3.0045045045045047,
+            "accuracy": 0.6171171171171171,
+            "calibration_cost": 3.0675675675675675,
+            "calibration_accuracy": 0.5855855855855856
+          },
+          {
+            "theta": 0.5,
+            "n_min": 4,
+            "cost": 4.18018018018018,
+            "accuracy": 0.6126126126126126,
+            "calibration_cost": 4.22972972972973,
+            "calibration_accuracy": 0.5990990990990991
+          },
+          {
+            "theta": 0.5,
+            "n_min": 5,
+            "cost": 5.135135135135135,
+            "accuracy": 0.6261261261261262,
+            "calibration_cost": 5.252252252252252,
+            "calibration_accuracy": 0.5945945945945946
+          },
+          {
+            "theta": 0.6,
+            "n_min": 2,
+            "cost": 2.5405405405405403,
+            "accuracy": 0.5990990990990991,
+            "calibration_cost": 2.6126126126126126,
+            "calibration_accuracy": 0.6036036036036037
+          },
+          {
+            "theta": 0.6,
+            "n_min": 3,
+            "cost": 3.2117117117117115,
+            "accuracy": 0.6216216216216216,
+            "calibration_cost": 3.22972972972973,
+            "calibration_accuracy": 0.5900900900900901
+          },
+          {
+            "theta": 0.6,
+            "n_min": 4,
+            "cost": 4.306306306306307,
+            "accuracy": 0.6396396396396397,
+            "calibration_cost": 4.436936936936937,
+            "calibration_accuracy": 0.6081081081081081
+          },
+          {
+            "theta": 0.6,
+            "n_min": 5,
+            "cost": 5.157657657657658,
+            "accuracy": 0.6216216216216216,
+            "calibration_cost": 5.2657657657657655,
+            "calibration_accuracy": 0.5990990990990991
+          },
+          {
+            "theta": 0.7,
+            "n_min": 2,
+            "cost": 2.563063063063063,
+            "accuracy": 0.5990990990990991,
+            "calibration_cost": 2.6126126126126126,
+            "calibration_accuracy": 0.6036036036036037
+          },
+          {
+            "theta": 0.7,
+            "n_min": 3,
+            "cost": 3.527027027027027,
+            "accuracy": 0.6486486486486487,
+            "calibration_cost": 3.5135135135135136,
+            "calibration_accuracy": 0.6261261261261262
+          },
+          {
+            "theta": 0.7,
+            "n_min": 4,
+            "cost": 4.382882882882883,
+            "accuracy": 0.6396396396396397,
+            "calibration_cost": 4.454954954954955,
+            "calibration_accuracy": 0.6081081081081081
+          },
+          {
+            "theta": 0.7,
+            "n_min": 5,
+            "cost": 5.22972972972973,
+            "accuracy": 0.6351351351351351,
+            "calibration_cost": 5.297297297297297,
+            "calibration_accuracy": 0.5990990990990991
+          },
+          {
+            "theta": 0.75,
+            "n_min": 2,
+            "cost": 2.563063063063063,
+            "accuracy": 0.5990990990990991,
+            "calibration_cost": 2.6126126126126126,
+            "calibration_accuracy": 0.6036036036036037
+          },
+          {
+            "theta": 0.75,
+            "n_min": 3,
+            "cost": 3.527027027027027,
+            "accuracy": 0.6486486486486487,
+            "calibration_cost": 3.527027027027027,
+            "calibration_accuracy": 0.6261261261261262
+          },
+          {
+            "theta": 0.75,
+            "n_min": 4,
+            "cost": 4.382882882882883,
+            "accuracy": 0.6396396396396397,
+            "calibration_cost": 4.468468468468468,
+            "calibration_accuracy": 0.6081081081081081
+          },
+          {
+            "theta": 0.75,
+            "n_min": 5,
+            "cost": 5.22972972972973,
+            "accuracy": 0.6351351351351351,
+            "calibration_cost": 5.3108108108108105,
+            "calibration_accuracy": 0.5990990990990991
+          },
+          {
+            "theta": 0.8,
+            "n_min": 2,
+            "cost": 2.5765765765765765,
+            "accuracy": 0.6036036036036037,
+            "calibration_cost": 2.6576576576576576,
+            "calibration_accuracy": 0.5990990990990991
+          },
+          {
+            "theta": 0.8,
+            "n_min": 3,
+            "cost": 3.5405405405405403,
+            "accuracy": 0.6531531531531531,
+            "calibration_cost": 3.5720720720720722,
+            "calibration_accuracy": 0.6216216216216216
+          },
+          {
+            "theta": 0.8,
+            "n_min": 4,
+            "cost": 4.481981981981982,
+            "accuracy": 0.6351351351351351,
+            "calibration_cost": 4.608108108108108,
+            "calibration_accuracy": 0.5945945945945946
+          },
+          {
+            "theta": 0.8,
+            "n_min": 5,
+            "cost": 5.297297297297297,
+            "accuracy": 0.6396396396396397,
+            "calibration_cost": 5.486486486486487,
+            "calibration_accuracy": 0.5990990990990991
+          },
+          {
+            "theta": 0.85,
+            "n_min": 2,
+            "cost": 2.626126126126126,
+            "accuracy": 0.6036036036036037,
+            "calibration_cost": 2.6621621621621623,
+            "calibration_accuracy": 0.5990990990990991
+          },
+          {
+            "theta": 0.85,
+            "n_min": 3,
+            "cost": 3.6036036036036037,
+            "accuracy": 0.6486486486486487,
+            "calibration_cost": 3.59009009009009,
+            "calibration_accuracy": 0.6216216216216216
+          },
+          {
+            "theta": 0.85,
+            "n_min": 4,
+            "cost": 4.6441441441441444,
+            "accuracy": 0.6351351351351351,
+            "calibration_cost": 4.702702702702703,
+            "calibration_accuracy": 0.6036036036036037
+          },
+          {
+            "theta": 0.85,
+            "n_min": 5,
+            "cost": 5.4324324324324325,
+            "accuracy": 0.6396396396396397,
+            "calibration_cost": 5.545045045045045,
+            "calibration_accuracy": 0.5990990990990991
+          },
+          {
+            "theta": 0.9,
+            "n_min": 2,
+            "cost": 2.7117117117117115,
+            "accuracy": 0.5990990990990991,
+            "calibration_cost": 2.675675675675676,
+            "calibration_accuracy": 0.5990990990990991
+          },
+          {
+            "theta": 0.9,
+            "n_min": 3,
+            "cost": 4.027027027027027,
+            "accuracy": 0.6261261261261262,
+            "calibration_cost": 3.8963963963963963,
+            "calibration_accuracy": 0.5945945945945946
+          },
+          {
+            "theta": 0.9,
+            "n_min": 4,
+            "cost": 4.815315315315315,
+            "accuracy": 0.6396396396396397,
+            "calibration_cost": 4.864864864864865,
+            "calibration_accuracy": 0.5990990990990991
+          },
+          {
+            "theta": 0.9,
+            "n_min": 5,
+            "cost": 5.657657657657658,
+            "accuracy": 0.6441441441441441,
+            "calibration_cost": 5.716216216216216,
+            "calibration_accuracy": 0.5900900900900901
+          },
+          {
+            "theta": 0.95,
+            "n_min": 2,
+            "cost": 2.8513513513513513,
+            "accuracy": 0.6036036036036037,
+            "calibration_cost": 2.81981981981982,
+            "calibration_accuracy": 0.5945945945945946
+          },
+          {
+            "theta": 0.95,
+            "n_min": 3,
+            "cost": 4.306306306306307,
+            "accuracy": 0.6261261261261262,
+            "calibration_cost": 4.171171171171171,
+            "calibration_accuracy": 0.581081081081081
+          },
+          {
+            "theta": 0.95,
+            "n_min": 4,
+            "cost": 5.2792792792792795,
+            "accuracy": 0.6351351351351351,
+            "calibration_cost": 5.378378378378378,
+            "calibration_accuracy": 0.5765765765765766
+          },
+          {
+            "theta": 0.95,
+            "n_min": 5,
+            "cost": 6.018018018018018,
+            "accuracy": 0.6396396396396397,
+            "calibration_cost": 6.162162162162162,
+            "calibration_accuracy": 0.5720720720720721
+          },
+          {
+            "theta": 0.99,
+            "n_min": 2,
+            "cost": 3.400900900900901,
+            "accuracy": 0.6126126126126126,
+            "calibration_cost": 3.3783783783783785,
+            "calibration_accuracy": 0.5900900900900901
+          },
+          {
+            "theta": 0.99,
+            "n_min": 3,
+            "cost": 5.346846846846847,
+            "accuracy": 0.6396396396396397,
+            "calibration_cost": 5.387387387387387,
+            "calibration_accuracy": 0.581081081081081
+          },
+          {
+            "theta": 0.99,
+            "n_min": 4,
+            "cost": 6.3558558558558556,
+            "accuracy": 0.6486486486486487,
+            "calibration_cost": 6.59009009009009,
+            "calibration_accuracy": 0.5855855855855856
+          },
+          {
+            "theta": 0.99,
+            "n_min": 5,
+            "cost": 7.126126126126126,
+            "accuracy": 0.6486486486486487,
+            "calibration_cost": 7.3108108108108105,
+            "calibration_accuracy": 0.581081081081081
+          }
+        ],
+        "vote_threshold_grid": [
+          {
+            "theta": 0.5,
+            "n_min": 2,
+            "cost": 2.1216216216216215,
+            "accuracy": 0.5405405405405406,
+            "calibration_cost": 2.234234234234234,
+            "calibration_accuracy": 0.5585585585585585
+          },
+          {
+            "theta": 0.5,
+            "n_min": 3,
+            "cost": 3.545045045045045,
+            "accuracy": 0.6081081081081081,
+            "calibration_cost": 3.518018018018018,
+            "calibration_accuracy": 0.5720720720720721
+          },
+          {
+            "theta": 0.5,
+            "n_min": 4,
+            "cost": 4.68018018018018,
+            "accuracy": 0.6216216216216216,
+            "calibration_cost": 4.738738738738738,
+            "calibration_accuracy": 0.5990990990990991
+          },
+          {
+            "theta": 0.5,
+            "n_min": 5,
+            "cost": 6.135135135135135,
+            "accuracy": 0.6486486486486487,
+            "calibration_cost": 6.315315315315315,
+            "calibration_accuracy": 0.5945945945945946
+          },
+          {
+            "theta": 0.6,
+            "n_min": 2,
+            "cost": 3.369369369369369,
+            "accuracy": 0.6126126126126126,
+            "calibration_cost": 3.2522522522522523,
+            "calibration_accuracy": 0.5900900900900901
+          },
+          {
+            "theta": 0.6,
+            "n_min": 3,
+            "cost": 4.891891891891892,
+            "accuracy": 0.6576576576576577,
+            "calibration_cost": 4.675675675675675,
+            "calibration_accuracy": 0.6081081081081081
+          },
+          {
+            "theta": 0.6,
+            "n_min": 4,
+            "cost": 6.328828828828829,
+            "accuracy": 0.6486486486486487,
+            "calibration_cost": 6.603603603603603,
+            "calibration_accuracy": 0.5945945945945946
+          },
+          {
+            "theta": 0.6,
+            "n_min": 5,
+            "cost": 7.135135135135135,
+            "accuracy": 0.6486486486486487,
+            "calibration_cost": 7.7657657657657655,
+            "calibration_accuracy": 0.5900900900900901
+          },
+          {
+            "theta": 0.7,
+            "n_min": 2,
+            "cost": 4.454954954954955,
+            "accuracy": 0.6216216216216216,
+            "calibration_cost": 4.256756756756757,
+            "calibration_accuracy": 0.5900900900900901
+          },
+          {
+            "theta": 0.7,
+            "n_min": 3,
+            "cost": 7.837837837837838,
+            "accuracy": 0.6666666666666666,
+            "calibration_cost": 7.788288288288288,
+            "calibration_accuracy": 0.5855855855855856
+          },
+          {
+            "theta": 0.7,
+            "n_min": 4,
+            "cost": 9.004504504504505,
+            "accuracy": 0.6756756756756757,
+            "calibration_cost": 9.427927927927929,
+            "calibration_accuracy": 0.5900900900900901
+          },
+          {
+            "theta": 0.7,
+            "n_min": 5,
+            "cost": 9.95045045045045,
+            "accuracy": 0.6756756756756757,
+            "calibration_cost": 10.396396396396396,
+            "calibration_accuracy": 0.5900900900900901
+          },
+          {
+            "theta": 0.75,
+            "n_min": 2,
+            "cost": 4.490990990990991,
+            "accuracy": 0.6216216216216216,
+            "calibration_cost": 4.346846846846847,
+            "calibration_accuracy": 0.5900900900900901
+          },
+          {
+            "theta": 0.75,
+            "n_min": 3,
+            "cost": 7.972972972972973,
+            "accuracy": 0.6666666666666666,
+            "calibration_cost": 7.927927927927928,
+            "calibration_accuracy": 0.5855855855855856
+          },
+          {
+            "theta": 0.75,
+            "n_min": 4,
+            "cost": 9.175675675675675,
+            "accuracy": 0.6756756756756757,
+            "calibration_cost": 9.567567567567568,
+            "calibration_accuracy": 0.5900900900900901
+          },
+          {
+            "theta": 0.75,
+            "n_min": 5,
+            "cost": 10.207207207207206,
+            "accuracy": 0.6756756756756757,
+            "calibration_cost": 10.54054054054054,
+            "calibration_accuracy": 0.5900900900900901
+          },
+          {
+            "theta": 0.8,
+            "n_min": 2,
+            "cost": 4.675675675675675,
+            "accuracy": 0.6216216216216216,
+            "calibration_cost": 4.657657657657658,
+            "calibration_accuracy": 0.5945945945945946
+          },
+          {
+            "theta": 0.8,
+            "n_min": 3,
+            "cost": 8.702702702702704,
+            "accuracy": 0.6666666666666666,
+            "calibration_cost": 8.558558558558559,
+            "calibration_accuracy": 0.5945945945945946
+          },
+          {
+            "theta": 0.8,
+            "n_min": 4,
+            "cost": 10.35135135135135,
+            "accuracy": 0.6756756756756757,
+            "calibration_cost": 10.522522522522523,
+            "calibration_accuracy": 0.5990990990990991
+          },
+          {
+            "theta": 0.8,
+            "n_min": 5,
+            "cost": 11.0,
+            "accuracy": 0.6756756756756757,
+            "calibration_cost": 11.067567567567568,
+            "calibration_accuracy": 0.5945945945945946
+          },
+          {
+            "theta": 0.85,
+            "n_min": 2,
+            "cost": 5.09009009009009,
+            "accuracy": 0.6216216216216216,
+            "calibration_cost": 5.256756756756757,
+            "calibration_accuracy": 0.5900900900900901
+          },
+          {
+            "theta": 0.85,
+            "n_min": 3,
+            "cost": 9.554054054054054,
+            "accuracy": 0.6666666666666666,
+            "calibration_cost": 9.414414414414415,
+            "calibration_accuracy": 0.5900900900900901
+          },
+          {
+            "theta": 0.85,
+            "n_min": 4,
+            "cost": 11.486486486486486,
+            "accuracy": 0.6756756756756757,
+            "calibration_cost": 11.432432432432432,
+            "calibration_accuracy": 0.5945945945945946
+          },
+          {
+            "theta": 0.85,
+            "n_min": 5,
+            "cost": 12.292792792792794,
+            "accuracy": 0.6756756756756757,
+            "calibration_cost": 12.18918918918919,
+            "calibration_accuracy": 0.5900900900900901
+          },
+          {
+            "theta": 0.9,
+            "n_min": 2,
+            "cost": 5.346846846846847,
+            "accuracy": 0.6216216216216216,
+            "calibration_cost": 5.621621621621622,
+            "calibration_accuracy": 0.5900900900900901
+          },
+          {
+            "theta": 0.9,
+            "n_min": 3,
+            "cost": 9.968468468468469,
+            "accuracy": 0.6666666666666666,
+            "calibration_cost": 10.022522522522523,
+            "calibration_accuracy": 0.5900900900900901
+          },
+          {
+            "theta": 0.9,
+            "n_min": 4,
+            "cost": 11.995495495495495,
+            "accuracy": 0.6756756756756757,
+            "calibration_cost": 12.117117117117116,
+            "calibration_accuracy": 0.5945945945945946
+          },
+          {
+            "theta": 0.9,
+            "n_min": 5,
+            "cost": 12.968468468468469,
+            "accuracy": 0.6756756756756757,
+            "calibration_cost": 12.873873873873874,
+            "calibration_accuracy": 0.5900900900900901
+          },
+          {
+            "theta": 0.95,
+            "n_min": 2,
+            "cost": 5.509009009009009,
+            "accuracy": 0.6216216216216216,
+            "calibration_cost": 5.693693693693693,
+            "calibration_accuracy": 0.5900900900900901
+          },
+          {
+            "theta": 0.95,
+            "n_min": 3,
+            "cost": 10.234234234234235,
+            "accuracy": 0.6666666666666666,
+            "calibration_cost": 10.162162162162161,
+            "calibration_accuracy": 0.5900900900900901
+          },
+          {
+            "theta": 0.95,
+            "n_min": 4,
+            "cost": 12.26126126126126,
+            "accuracy": 0.6756756756756757,
+            "calibration_cost": 12.324324324324325,
+            "calibration_accuracy": 0.5945945945945946
+          },
+          {
+            "theta": 0.95,
+            "n_min": 5,
+            "cost": 13.315315315315315,
+            "accuracy": 0.6756756756756757,
+            "calibration_cost": 13.08108108108108,
+            "calibration_accuracy": 0.5900900900900901
+          },
+          {
+            "theta": 0.99,
+            "n_min": 2,
+            "cost": 5.509009009009009,
+            "accuracy": 0.6216216216216216,
+            "calibration_cost": 5.693693693693693,
+            "calibration_accuracy": 0.5900900900900901
+          },
+          {
+            "theta": 0.99,
+            "n_min": 3,
+            "cost": 10.234234234234235,
+            "accuracy": 0.6666666666666666,
+            "calibration_cost": 10.162162162162161,
+            "calibration_accuracy": 0.5900900900900901
+          },
+          {
+            "theta": 0.99,
+            "n_min": 4,
+            "cost": 12.26126126126126,
+            "accuracy": 0.6756756756756757,
+            "calibration_cost": 12.324324324324325,
+            "calibration_accuracy": 0.5945945945945946
+          },
+          {
+            "theta": 0.99,
+            "n_min": 5,
+            "cost": 13.315315315315315,
+            "accuracy": 0.6756756756756757,
+            "calibration_cost": 13.08108108108108,
+            "calibration_accuracy": 0.5900900900900901
+          }
+        ],
+        "fixed_stream_curve": [
+          {
+            "cost": 1.0,
+            "accuracy": 0.4144144144144144
+          },
+          {
+            "cost": 2.0,
+            "accuracy": 0.4864864864864865
+          },
+          {
+            "cost": 3.0,
+            "accuracy": 0.5900900900900901
+          },
+          {
+            "cost": 4.0,
+            "accuracy": 0.6081081081081081
+          },
+          {
+            "cost": 5.0,
+            "accuracy": 0.6216216216216216
+          },
+          {
+            "cost": 6.0,
+            "accuracy": 0.6261261261261262
+          },
+          {
+            "cost": 7.0,
+            "accuracy": 0.6126126126126126
+          },
+          {
+            "cost": 8.0,
+            "accuracy": 0.6441441441441441
+          },
+          {
+            "cost": 9.0,
+            "accuracy": 0.6351351351351351
+          },
+          {
+            "cost": 10.0,
+            "accuracy": 0.6396396396396397
+          },
+          {
+            "cost": 11.0,
+            "accuracy": 0.6531531531531531
+          },
+          {
+            "cost": 12.0,
+            "accuracy": 0.6621621621621622
+          },
+          {
+            "cost": 13.0,
+            "accuracy": 0.6666666666666666
+          },
+          {
+            "cost": 14.0,
+            "accuracy": 0.6756756756756757
+          },
+          {
+            "cost": 15.0,
+            "accuracy": 0.6711711711711712
+          },
+          {
+            "cost": 16.0,
+            "accuracy": 0.6846846846846847
+          },
+          {
+            "cost": 17.0,
+            "accuracy": 0.6756756756756757
+          },
+          {
+            "cost": 18.0,
+            "accuracy": 0.6756756756756757
+          }
+        ],
+        "calibration_selected_targets": {
+          "3": {
+            "theta": 0.5,
+            "n_min": 3,
+            "cost": 3.0045045045045047,
+            "accuracy": 0.6171171171171171,
+            "calibration_cost": 3.0675675675675675,
+            "calibration_accuracy": 0.5855855855855856
+          },
+          "5": {
+            "theta": 0.9,
+            "n_min": 4,
+            "cost": 4.815315315315315,
+            "accuracy": 0.6396396396396397,
+            "calibration_cost": 4.864864864864865,
+            "calibration_accuracy": 0.5990990990990991
+          },
+          "8": {
+            "theta": 0.99,
+            "n_min": 5,
+            "cost": 7.126126126126126,
+            "accuracy": 0.6486486486486487,
+            "calibration_cost": 7.3108108108108105,
+            "calibration_accuracy": 0.581081081081081
+          }
+        },
+        "posterior_pareto": [
+          {
+            "theta": 0.5,
+            "n_min": 2,
+            "cost": 2.1216216216216215,
+            "accuracy": 0.5405405405405406,
+            "calibration_cost": 2.234234234234234,
+            "calibration_accuracy": 0.5585585585585585
+          },
+          {
+            "theta": 0.6,
+            "n_min": 2,
+            "cost": 2.5405405405405403,
+            "accuracy": 0.5990990990990991,
+            "calibration_cost": 2.6126126126126126,
+            "calibration_accuracy": 0.6036036036036037
+          },
+          {
+            "theta": 0.8,
+            "n_min": 2,
+            "cost": 2.5765765765765765,
+            "accuracy": 0.6036036036036037,
+            "calibration_cost": 2.6576576576576576,
+            "calibration_accuracy": 0.5990990990990991
+          },
+          {
+            "theta": 0.5,
+            "n_min": 3,
+            "cost": 3.0045045045045047,
+            "accuracy": 0.6171171171171171,
+            "calibration_cost": 3.0675675675675675,
+            "calibration_accuracy": 0.5855855855855856
+          },
+          {
+            "theta": 0.6,
+            "n_min": 3,
+            "cost": 3.2117117117117115,
+            "accuracy": 0.6216216216216216,
+            "calibration_cost": 3.22972972972973,
+            "calibration_accuracy": 0.5900900900900901
+          },
+          {
+            "theta": 0.7,
+            "n_min": 3,
+            "cost": 3.527027027027027,
+            "accuracy": 0.6486486486486487,
+            "calibration_cost": 3.5135135135135136,
+            "calibration_accuracy": 0.6261261261261262
+          },
+          {
+            "theta": 0.8,
+            "n_min": 3,
+            "cost": 3.5405405405405403,
+            "accuracy": 0.6531531531531531,
+            "calibration_cost": 3.5720720720720722,
+            "calibration_accuracy": 0.6216216216216216
+          }
+        ],
+        "posterior_minimum_to_single9": {
+          "theta": 0.6,
+          "n_min": 2,
+          "cost": 2.5405405405405403,
+          "accuracy": 0.5990990990990991,
+          "calibration_cost": 2.6126126126126126,
+          "calibration_accuracy": 0.6036036036036037
+        },
+        "posterior_minimum_to_team18": null,
+        "vote_threshold_pareto": [
+          {
+            "theta": 0.5,
+            "n_min": 2,
+            "cost": 2.1216216216216215,
+            "accuracy": 0.5405405405405406,
+            "calibration_cost": 2.234234234234234,
+            "calibration_accuracy": 0.5585585585585585
+          },
+          {
+            "theta": 0.6,
+            "n_min": 2,
+            "cost": 3.369369369369369,
+            "accuracy": 0.6126126126126126,
+            "calibration_cost": 3.2522522522522523,
+            "calibration_accuracy": 0.5900900900900901
+          },
+          {
+            "theta": 0.7,
+            "n_min": 2,
+            "cost": 4.454954954954955,
+            "accuracy": 0.6216216216216216,
+            "calibration_cost": 4.256756756756757,
+            "calibration_accuracy": 0.5900900900900901
+          },
+          {
+            "theta": 0.6,
+            "n_min": 3,
+            "cost": 4.891891891891892,
+            "accuracy": 0.6576576576576577,
+            "calibration_cost": 4.675675675675675,
+            "calibration_accuracy": 0.6081081081081081
+          },
+          {
+            "theta": 0.7,
+            "n_min": 3,
+            "cost": 7.837837837837838,
+            "accuracy": 0.6666666666666666,
+            "calibration_cost": 7.788288288288288,
+            "calibration_accuracy": 0.5855855855855856
+          },
+          {
+            "theta": 0.7,
+            "n_min": 4,
+            "cost": 9.004504504504505,
+            "accuracy": 0.6756756756756757,
+            "calibration_cost": 9.427927927927929,
+            "calibration_accuracy": 0.5900900900900901
+          }
+        ],
+        "vote_threshold_minimum_to_single9": {
+          "theta": 0.6,
+          "n_min": 2,
+          "cost": 3.369369369369369,
+          "accuracy": 0.6126126126126126,
+          "calibration_cost": 3.2522522522522523,
+          "calibration_accuracy": 0.5900900900900901
+        },
+        "vote_threshold_minimum_to_team18": {
+          "theta": 0.7,
+          "n_min": 4,
+          "cost": 9.004504504504505,
+          "accuracy": 0.6756756756756757,
+          "calibration_cost": 9.427927927927929,
+          "calibration_accuracy": 0.5900900900900901
+        },
+        "fixed_stream_pareto": [
+          {
+            "cost": 1.0,
+            "accuracy": 0.4144144144144144
+          },
+          {
+            "cost": 2.0,
+            "accuracy": 0.4864864864864865
+          },
+          {
+            "cost": 3.0,
+            "accuracy": 0.5900900900900901
+          },
+          {
+            "cost": 4.0,
+            "accuracy": 0.6081081081081081
+          },
+          {
+            "cost": 5.0,
+            "accuracy": 0.6216216216216216
+          },
+          {
+            "cost": 6.0,
+            "accuracy": 0.6261261261261262
+          },
+          {
+            "cost": 8.0,
+            "accuracy": 0.6441441441441441
+          },
+          {
+            "cost": 11.0,
+            "accuracy": 0.6531531531531531
+          },
+          {
+            "cost": 12.0,
+            "accuracy": 0.6621621621621622
+          },
+          {
+            "cost": 13.0,
+            "accuracy": 0.6666666666666666
+          },
+          {
+            "cost": 14.0,
+            "accuracy": 0.6756756756756757
+          },
+          {
+            "cost": 16.0,
+            "accuracy": 0.6846846846846847
+          }
+        ],
+        "fixed_stream_minimum_to_single9": {
+          "cost": 3.0,
+          "accuracy": 0.5900900900900901
+        },
+        "fixed_stream_minimum_to_team18": {
+          "cost": 14.0,
+          "accuracy": 0.6756756756756757
+        }
+      }
+    },
+    "math500": {
+      "n": 393,
+      "n_cal": 196,
+      "n_eval": 197,
+      "calibration_qids": [
+        "math500:0001",
+        "math500:0003",
+        "math500:0007",
+        "math500:0009",
+        "math500:0010",
+        "math500:0015",
+        "math500:0018",
+        "math500:0022",
+        "math500:0025",
+        "math500:0026",
+        "math500:0030",
+        "math500:0032",
+        "math500:0034",
+        "math500:0040",
+        "math500:0041",
+        "math500:0044",
+        "math500:0046",
+        "math500:0050",
+        "math500:0051",
+        "math500:0052",
+        "math500:0055",
+        "math500:0059",
+        "math500:0064",
+        "math500:0066",
+        "math500:0067",
+        "math500:0074",
+        "math500:0075",
+        "math500:0077",
+        "math500:0078",
+        "math500:0081",
+        "math500:0085",
+        "math500:0086",
+        "math500:0090",
+        "math500:0091",
+        "math500:0092",
+        "math500:0093",
+        "math500:0095",
+        "math500:0097",
+        "math500:0099",
+        "math500:0106",
+        "math500:0109",
+        "math500:0110",
+        "math500:0120",
+        "math500:0123",
+        "math500:0129",
+        "math500:0133",
+        "math500:0134",
+        "math500:0135",
+        "math500:0136",
+        "math500:0144",
+        "math500:0146",
+        "math500:0147",
+        "math500:0148",
+        "math500:0151",
+        "math500:0159",
+        "math500:0167",
+        "math500:0168",
+        "math500:0169",
+        "math500:0171",
+        "math500:0176",
+        "math500:0178",
+        "math500:0180",
+        "math500:0182",
+        "math500:0186",
+        "math500:0188",
+        "math500:0190",
+        "math500:0192",
+        "math500:0200",
+        "math500:0201",
+        "math500:0203",
+        "math500:0207",
+        "math500:0210",
+        "math500:0212",
+        "math500:0213",
+        "math500:0215",
+        "math500:0217",
+        "math500:0218",
+        "math500:0219",
+        "math500:0221",
+        "math500:0222",
+        "math500:0223",
+        "math500:0227",
+        "math500:0232",
+        "math500:0233",
+        "math500:0234",
+        "math500:0236",
+        "math500:0238",
+        "math500:0239",
+        "math500:0240",
+        "math500:0241",
+        "math500:0243",
+        "math500:0244",
+        "math500:0245",
+        "math500:0248",
+        "math500:0249",
+        "math500:0250",
+        "math500:0251",
+        "math500:0254",
+        "math500:0255",
+        "math500:0256",
+        "math500:0257",
+        "math500:0261",
+        "math500:0262",
+        "math500:0265",
+        "math500:0267",
+        "math500:0271",
+        "math500:0272",
+        "math500:0276",
+        "math500:0277",
+        "math500:0278",
+        "math500:0279",
+        "math500:0281",
+        "math500:0284",
+        "math500:0285",
+        "math500:0288",
+        "math500:0290",
+        "math500:0293",
+        "math500:0296",
+        "math500:0301",
+        "math500:0304",
+        "math500:0305",
+        "math500:0306",
+        "math500:0307",
+        "math500:0314",
+        "math500:0316",
+        "math500:0320",
+        "math500:0321",
+        "math500:0322",
+        "math500:0327",
+        "math500:0328",
+        "math500:0329",
+        "math500:0330",
+        "math500:0340",
+        "math500:0343",
+        "math500:0345",
+        "math500:0346",
+        "math500:0347",
+        "math500:0349",
+        "math500:0355",
+        "math500:0357",
+        "math500:0358",
+        "math500:0360",
+        "math500:0361",
+        "math500:0362",
+        "math500:0364",
+        "math500:0365",
+        "math500:0366",
+        "math500:0367",
+        "math500:0368",
+        "math500:0371",
+        "math500:0372",
+        "math500:0374",
+        "math500:0375",
+        "math500:0376",
+        "math500:0378",
+        "math500:0380",
+        "math500:0382",
+        "math500:0383",
+        "math500:0384",
+        "math500:0387",
+        "math500:0388",
+        "math500:0391",
+        "math500:0392",
+        "math500:0393",
+        "math500:0396",
+        "math500:0401",
+        "math500:0402",
+        "math500:0403",
+        "math500:0404",
+        "math500:0406",
+        "math500:0410",
+        "math500:0412",
+        "math500:0413",
+        "math500:0414",
+        "math500:0418",
+        "math500:0419",
+        "math500:0420",
+        "math500:0422",
+        "math500:0425",
+        "math500:0432",
+        "math500:0434",
+        "math500:0435",
+        "math500:0437",
+        "math500:0439",
+        "math500:0440",
+        "math500:0441",
+        "math500:0442",
+        "math500:0445",
+        "math500:0447",
+        "math500:0448",
+        "math500:0455",
+        "math500:0457",
+        "math500:0458",
+        "math500:0459",
+        "math500:0460",
+        "math500:0461"
+      ],
+      "evaluation_qids": [
+        "math500:0002",
+        "math500:0004",
+        "math500:0008",
+        "math500:0011",
+        "math500:0012",
+        "math500:0019",
+        "math500:0020",
+        "math500:0023",
+        "math500:0024",
+        "math500:0028",
+        "math500:0035",
+        "math500:0036",
+        "math500:0038",
+        "math500:0039",
+        "math500:0047",
+        "math500:0048",
+        "math500:0049",
+        "math500:0057",
+        "math500:0060",
+        "math500:0063",
+        "math500:0065",
+        "math500:0068",
+        "math500:0069",
+        "math500:0070",
+        "math500:0071",
+        "math500:0076",
+        "math500:0079",
+        "math500:0080",
+        "math500:0082",
+        "math500:0084",
+        "math500:0094",
+        "math500:0101",
+        "math500:0103",
+        "math500:0104",
+        "math500:0107",
+        "math500:0108",
+        "math500:0114",
+        "math500:0115",
+        "math500:0116",
+        "math500:0118",
+        "math500:0119",
+        "math500:0124",
+        "math500:0125",
+        "math500:0126",
+        "math500:0127",
+        "math500:0128",
+        "math500:0130",
+        "math500:0132",
+        "math500:0137",
+        "math500:0139",
+        "math500:0145",
+        "math500:0149",
+        "math500:0150",
+        "math500:0152",
+        "math500:0153",
+        "math500:0155",
+        "math500:0157",
+        "math500:0161",
+        "math500:0162",
+        "math500:0163",
+        "math500:0165",
+        "math500:0170",
+        "math500:0172",
+        "math500:0173",
+        "math500:0181",
+        "math500:0183",
+        "math500:0184",
+        "math500:0185",
+        "math500:0187",
+        "math500:0193",
+        "math500:0194",
+        "math500:0197",
+        "math500:0198",
+        "math500:0199",
+        "math500:0205",
+        "math500:0211",
+        "math500:0216",
+        "math500:0220",
+        "math500:0224",
+        "math500:0225",
+        "math500:0226",
+        "math500:0228",
+        "math500:0229",
+        "math500:0230",
+        "math500:0231",
+        "math500:0235",
+        "math500:0237",
+        "math500:0242",
+        "math500:0246",
+        "math500:0247",
+        "math500:0252",
+        "math500:0253",
+        "math500:0258",
+        "math500:0259",
+        "math500:0260",
+        "math500:0263",
+        "math500:0264",
+        "math500:0266",
+        "math500:0268",
+        "math500:0269",
+        "math500:0270",
+        "math500:0273",
+        "math500:0274",
+        "math500:0275",
+        "math500:0280",
+        "math500:0282",
+        "math500:0283",
+        "math500:0286",
+        "math500:0287",
+        "math500:0289",
+        "math500:0291",
+        "math500:0292",
+        "math500:0294",
+        "math500:0295",
+        "math500:0297",
+        "math500:0298",
+        "math500:0299",
+        "math500:0300",
+        "math500:0302",
+        "math500:0303",
+        "math500:0308",
+        "math500:0309",
+        "math500:0310",
+        "math500:0311",
+        "math500:0312",
+        "math500:0313",
+        "math500:0315",
+        "math500:0317",
+        "math500:0318",
+        "math500:0319",
+        "math500:0323",
+        "math500:0324",
+        "math500:0325",
+        "math500:0326",
+        "math500:0331",
+        "math500:0332",
+        "math500:0341",
+        "math500:0342",
+        "math500:0344",
+        "math500:0348",
+        "math500:0350",
+        "math500:0351",
+        "math500:0352",
+        "math500:0353",
+        "math500:0354",
+        "math500:0356",
+        "math500:0359",
+        "math500:0363",
+        "math500:0369",
+        "math500:0370",
+        "math500:0373",
+        "math500:0377",
+        "math500:0379",
+        "math500:0381",
+        "math500:0385",
+        "math500:0386",
+        "math500:0389",
+        "math500:0390",
+        "math500:0394",
+        "math500:0395",
+        "math500:0397",
+        "math500:0398",
+        "math500:0399",
+        "math500:0400",
+        "math500:0405",
+        "math500:0407",
+        "math500:0408",
+        "math500:0409",
+        "math500:0411",
+        "math500:0415",
+        "math500:0416",
+        "math500:0417",
+        "math500:0421",
+        "math500:0423",
+        "math500:0424",
+        "math500:0426",
+        "math500:0427",
+        "math500:0428",
+        "math500:0429",
+        "math500:0430",
+        "math500:0431",
+        "math500:0433",
+        "math500:0436",
+        "math500:0438",
+        "math500:0443",
+        "math500:0444",
+        "math500:0446",
+        "math500:0449",
+        "math500:0450",
+        "math500:0451",
+        "math500:0452",
+        "math500:0453",
+        "math500:0454",
+        "math500:0456",
+        "math500:0462",
+        "math500:0463",
+        "math500:0464"
+      ],
+      "order": [
+        "qwen",
+        "llama",
+        "mistral"
+      ],
+      "cal9": {
+        "qwen": 0.5459183673469388,
+        "llama": 0.42346938775510207,
+        "mistral": 0.05102040816326531
+      },
+      "rel_cal": {
+        "qwen": 0.693298659605805,
+        "llama": 0.4048086620669938
+      },
+      "calibration_calls": 5292,
+      "allocation": {
+        "6": {
+          "budget": 6,
+          "splits": {
+            "two": {
+              "qwen": 3,
+              "llama": 3
+            },
+            "three": {
+              "qwen": 2,
+              "llama": 2,
+              "mistral": 2
+            }
+          },
+          "two": 0.5786802030456852,
+          "three": 0.5279187817258884,
+          "three_minus_two": {
+            "delta": -0.050761421319796954,
+            "ci": [
+              -0.08629441624365482,
+              -0.015228426395939087
+            ],
+            "p": 0.012939453125,
+            "p_holm": 0.1552734375,
+            "holm_family_size": 12
+          },
+          "single": 0.583756345177665,
+          "two_minus_single": {
+            "delta": -0.005076142131979695,
+            "ci": [
+              -0.04568527918781726,
+              0.03553299492385787
+            ],
+            "p": 1.0,
+            "p_holm": 1.0,
+            "holm_family_size": 6
+          },
+          "single_model": "qwen",
+          "single_arms": {
+            "qwen": 0.583756345177665,
+            "llama": 0.5228426395939086,
+            "mistral": 0.06598984771573604
+          }
+        },
+        "9": {
+          "budget": 9,
+          "splits": {
+            "two": {
+              "qwen": 5,
+              "llama": 4
+            },
+            "three": {
+              "qwen": 3,
+              "llama": 3,
+              "mistral": 3
+            }
+          },
+          "two": 0.5939086294416244,
+          "three": 0.5532994923857868,
+          "three_minus_two": {
+            "delta": -0.04060913705583756,
+            "ci": [
+              -0.07614213197969544,
+              -0.005076142131979695
+            ],
+            "p": 0.057373046875,
+            "p_holm": 0.286865234375,
+            "holm_family_size": 12
+          },
+          "single": 0.5888324873096447,
+          "two_minus_single": {
+            "delta": 0.005076142131979695,
+            "ci": [
+              -0.03553299492385787,
+              0.04568527918781726
+            ],
+            "p": 1.0,
+            "p_holm": 1.0,
+            "holm_family_size": 6
+          },
+          "single_model": "qwen",
+          "single_arms": {
+            "qwen": 0.5888324873096447,
+            "llama": 0.5583756345177665,
+            "mistral": 0.07106598984771574
+          }
+        },
+        "12": {
+          "budget": 12,
+          "splits": {
+            "two": {
+              "qwen": 6,
+              "llama": 6
+            },
+            "three": {
+              "qwen": 4,
+              "llama": 4,
+              "mistral": 4
+            }
+          },
+          "two": 0.6192893401015228,
+          "three": 0.5634517766497462,
+          "three_minus_two": {
+            "delta": -0.05583756345177665,
+            "ci": [
+              -0.10152284263959391,
+              -0.01015228426395939
+            ],
+            "p": 0.02660369873046875,
+            "p_holm": 0.21875859098508954,
+            "holm_family_size": 12
+          },
+          "single": null,
+          "two_minus_single": null
+        },
+        "18": {
+          "budget": 18,
+          "splits": {
+            "two": {
+              "qwen": 9,
+              "llama": 9
+            },
+            "three": {
+              "qwen": 6,
+              "llama": 6,
+              "mistral": 6
+            }
+          },
+          "two": 0.6345177664974619,
+          "three": 0.5786802030456852,
+          "three_minus_two": {
+            "delta": -0.05583756345177665,
+            "ci": [
+              -0.10152284263959391,
+              -0.015228426395939087
+            ],
+            "p": 0.0192108154296875,
+            "p_holm": 0.192108154296875,
+            "holm_family_size": 12
+          },
+          "single": null,
+          "two_minus_single": null
+        }
+      },
+      "fixed_pools": {
+        "2x4": {
+          "budget": 8,
+          "split": {
+            "qwen": 4,
+            "llama": 4
+          },
+          "majority": 0.5888324873096447,
+          "onecoin": 0.5786802030456852,
+          "cal_weighted": 0.5939086294416244,
+          "reliabilities": {
+            "qwen": 0.6941604577378592,
+            "llama": 0.40911517881749704
+          },
+          "coverage_ceiling": 0.7563451776649747,
+          "member_selection_oracle": 0.6345177664974619,
+          "gap_coverage": 0.17766497461928943,
+          "gap_member": 0.055837563451776706,
+          "weighted_minus_onecoin": {
+            "delta": 0.015228426395939087,
+            "ci": [
+              -0.005076142131979695,
+              0.04060913705583756
+            ],
+            "p": 0.375,
+            "p_holm": 1.0,
+            "holm_family_size": 12
+          },
+          "onecoin_minus_majority": {
+            "delta": -0.01015228426395939,
+            "ci": [
+              -0.04060913705583756,
+              0.02030456852791878
+            ],
+            "p": 0.75390625,
+            "p_holm": 1.0,
+            "holm_family_size": 12
+          },
+          "multi_coin": null,
+          "multicoin_minus_onecoin": null
+        },
+        "3x3": {
+          "budget": 9,
+          "split": {
+            "qwen": 3,
+            "llama": 3,
+            "mistral": 3
+          },
+          "majority": 0.5532994923857868,
+          "onecoin": 0.5532994923857868,
+          "cal_weighted": 0.5786802030456852,
+          "reliabilities": {
+            "qwen": 0.6920330687571222,
+            "llama": 0.41512563871204755,
+            "mistral": 0.036272289906213354
+          },
+          "coverage_ceiling": 0.7106598984771574,
+          "member_selection_oracle": 0.6395939086294417,
+          "gap_coverage": 0.15736040609137059,
+          "gap_member": 0.08629441624365486,
+          "weighted_minus_onecoin": {
+            "delta": 0.025380710659898477,
+            "ci": [
+              0.005076142131979695,
+              0.050761421319796954
+            ],
+            "p": 0.0625,
+            "p_holm": 0.625,
+            "holm_family_size": 12
+          },
+          "onecoin_minus_majority": {
+            "delta": 0.0,
+            "ci": [
+              -0.03553299492385787,
+              0.04060913705583756
+            ],
+            "p": 1.0,
+            "p_holm": 1.0,
+            "holm_family_size": 12
+          },
+          "multi_coin": null,
+          "multicoin_minus_onecoin": null
+        },
+        "2x9": {
+          "budget": 18,
+          "split": {
+            "qwen": 9,
+            "llama": 9
+          },
+          "majority": 0.6345177664974619,
+          "onecoin": 0.6091370558375635,
+          "cal_weighted": 0.6294416243654822,
+          "reliabilities": {
+            "qwen": 0.7131602381349527,
+            "llama": 0.43180902236004226
+          },
+          "coverage_ceiling": 0.817258883248731,
+          "member_selection_oracle": 0.6700507614213198,
+          "gap_coverage": 0.20812182741116747,
+          "gap_member": 0.060913705583756306,
+          "weighted_minus_onecoin": {
+            "delta": 0.02030456852791878,
+            "ci": [
+              0.005076142131979695,
+              0.04060913705583756
+            ],
+            "p": 0.125,
+            "p_holm": 1.0,
+            "holm_family_size": 12
+          },
+          "onecoin_minus_majority": {
+            "delta": -0.025380710659898477,
+            "ci": [
+              -0.050761421319796954,
+              -0.005076142131979695
+            ],
+            "p": 0.0625,
+            "p_holm": 0.625,
+            "holm_family_size": 12
+          },
+          "multi_coin": null,
+          "multicoin_minus_onecoin": null
+        },
+        "3x9": {
+          "budget": 27,
+          "split": {
+            "qwen": 9,
+            "llama": 9,
+            "mistral": 9
+          },
+          "majority": 0.583756345177665,
+          "onecoin": 0.5939086294416244,
+          "cal_weighted": 0.6294416243654822,
+          "reliabilities": {
+            "qwen": 0.6881442287754252,
+            "llama": 0.42345585909877875,
+            "mistral": 0.0433391433572205
+          },
+          "coverage_ceiling": 0.817258883248731,
+          "member_selection_oracle": 0.6751269035532995,
+          "gap_coverage": 0.2233502538071066,
+          "gap_member": 0.08121827411167515,
+          "weighted_minus_onecoin": {
+            "delta": 0.03553299492385787,
+            "ci": [
+              0.01015228426395939,
+              0.06091370558375635
+            ],
+            "p": 0.015625,
+            "p_holm": 0.171875,
+            "holm_family_size": 12
+          },
+          "onecoin_minus_majority": {
+            "delta": 0.01015228426395939,
+            "ci": [
+              -0.030456852791878174,
+              0.05583756345177665
+            ],
+            "p": 0.8145294189453125,
+            "p_holm": 1.0,
+            "holm_family_size": 12
+          },
+          "multi_coin": null,
+          "multicoin_minus_onecoin": null
+        }
+      },
+      "stopping": {
+        "single9_reference": {
+          "model": "qwen",
+          "accuracy": 0.5888324873096447,
+          "arms": {
+            "qwen": 0.5888324873096447,
+            "llama": 0.5583756345177665,
+            "mistral": 0.07106598984771574
+          },
+          "selection": "post-hoc strongest eval arm"
+        },
+        "team18_reference": 0.6345177664974619,
+        "posterior_grid": [
+          {
+            "theta": 0.5,
+            "n_min": 2,
+            "cost": 2.0,
+            "accuracy": 0.5279187817258884,
+            "calibration_cost": 2.0,
+            "calibration_accuracy": 0.5051020408163265
+          },
+          {
+            "theta": 0.5,
+            "n_min": 3,
+            "cost": 4.939086294416244,
+            "accuracy": 0.5482233502538071,
+            "calibration_cost": 4.892857142857143,
+            "calibration_accuracy": 0.5255102040816326
+          },
+          {
+            "theta": 0.5,
+            "n_min": 4,
+            "cost": 5.604060913705584,
+            "accuracy": 0.5532994923857868,
+            "calibration_cost": 5.530612244897959,
+            "calibration_accuracy": 0.5357142857142857
+          },
+          {
+            "theta": 0.5,
+            "n_min": 5,
+            "cost": 6.324873096446701,
+            "accuracy": 0.5634517766497462,
+            "calibration_cost": 6.239795918367347,
+            "calibration_accuracy": 0.5306122448979592
+          },
+          {
+            "theta": 0.6,
+            "n_min": 2,
+            "cost": 4.883248730964467,
+            "accuracy": 0.5685279187817259,
+            "calibration_cost": 4.938775510204081,
+            "calibration_accuracy": 0.5357142857142857
+          },
+          {
+            "theta": 0.6,
+            "n_min": 3,
+            "cost": 5.461928934010152,
+            "accuracy": 0.5685279187817259,
+            "calibration_cost": 5.5,
+            "calibration_accuracy": 0.5357142857142857
+          },
+          {
+            "theta": 0.6,
+            "n_min": 4,
+            "cost": 6.040609137055838,
+            "accuracy": 0.5685279187817259,
+            "calibration_cost": 6.061224489795919,
+            "calibration_accuracy": 0.5357142857142857
+          },
+          {
+            "theta": 0.6,
+            "n_min": 5,
+            "cost": 6.66497461928934,
+            "accuracy": 0.5736040609137056,
+            "calibration_cost": 6.678571428571429,
+            "calibration_accuracy": 0.5357142857142857
+          },
+          {
+            "theta": 0.7,
+            "n_min": 2,
+            "cost": 5.111675126903553,
+            "accuracy": 0.583756345177665,
+            "calibration_cost": 5.173469387755102,
+            "calibration_accuracy": 0.5459183673469388
+          },
+          {
+            "theta": 0.7,
+            "n_min": 3,
+            "cost": 5.690355329949239,
+            "accuracy": 0.583756345177665,
+            "calibration_cost": 5.73469387755102,
+            "calibration_accuracy": 0.5459183673469388
+          },
+          {
+            "theta": 0.7,
+            "n_min": 4,
+            "cost": 6.269035532994923,
+            "accuracy": 0.583756345177665,
+            "calibration_cost": 6.295918367346939,
+            "calibration_accuracy": 0.5459183673469388
+          },
+          {
+            "theta": 0.7,
+            "n_min": 5,
+            "cost": 6.847715736040609,
+            "accuracy": 0.583756345177665,
+            "calibration_cost": 6.857142857142857,
+            "calibration_accuracy": 0.5459183673469388
+          },
+          {
+            "theta": 0.75,
+            "n_min": 2,
+            "cost": 5.218274111675127,
+            "accuracy": 0.583756345177665,
+            "calibration_cost": 5.285714285714286,
+            "calibration_accuracy": 0.5510204081632653
+          },
+          {
+            "theta": 0.75,
+            "n_min": 3,
+            "cost": 5.7969543147208125,
+            "accuracy": 0.583756345177665,
+            "calibration_cost": 5.846938775510204,
+            "calibration_accuracy": 0.5510204081632653
+          },
+          {
+            "theta": 0.75,
+            "n_min": 4,
+            "cost": 6.375634517766497,
+            "accuracy": 0.583756345177665,
+            "calibration_cost": 6.408163265306122,
+            "calibration_accuracy": 0.5510204081632653
+          },
+          {
+            "theta": 0.75,
+            "n_min": 5,
+            "cost": 6.9543147208121825,
+            "accuracy": 0.583756345177665,
+            "calibration_cost": 6.969387755102041,
+            "calibration_accuracy": 0.5510204081632653
+          },
+          {
+            "theta": 0.8,
+            "n_min": 2,
+            "cost": 5.5126903553299496,
+            "accuracy": 0.6091370558375635,
+            "calibration_cost": 5.525510204081633,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.8,
+            "n_min": 3,
+            "cost": 6.091370558375634,
+            "accuracy": 0.6091370558375635,
+            "calibration_cost": 6.086734693877551,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.8,
+            "n_min": 4,
+            "cost": 6.67005076142132,
+            "accuracy": 0.6091370558375635,
+            "calibration_cost": 6.6479591836734695,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.8,
+            "n_min": 5,
+            "cost": 7.350253807106599,
+            "accuracy": 0.6091370558375635,
+            "calibration_cost": 7.326530612244898,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.85,
+            "n_min": 2,
+            "cost": 6.116751269035533,
+            "accuracy": 0.6142131979695431,
+            "calibration_cost": 6.331632653061225,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.85,
+            "n_min": 3,
+            "cost": 6.695431472081219,
+            "accuracy": 0.6142131979695431,
+            "calibration_cost": 6.892857142857143,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.85,
+            "n_min": 4,
+            "cost": 7.446700507614213,
+            "accuracy": 0.6142131979695431,
+            "calibration_cost": 7.6938775510204085,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.85,
+            "n_min": 5,
+            "cost": 7.9543147208121825,
+            "accuracy": 0.6142131979695431,
+            "calibration_cost": 8.137755102040817,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.9,
+            "n_min": 2,
+            "cost": 6.309644670050761,
+            "accuracy": 0.6142131979695431,
+            "calibration_cost": 6.525510204081633,
+            "calibration_accuracy": 0.5561224489795918
+          },
+          {
+            "theta": 0.9,
+            "n_min": 3,
+            "cost": 8.035532994923859,
+            "accuracy": 0.6142131979695431,
+            "calibration_cost": 7.938775510204081,
+            "calibration_accuracy": 0.5561224489795918
+          },
+          {
+            "theta": 0.9,
+            "n_min": 4,
+            "cost": 8.47715736040609,
+            "accuracy": 0.6142131979695431,
+            "calibration_cost": 8.464285714285714,
+            "calibration_accuracy": 0.5561224489795918
+          },
+          {
+            "theta": 0.9,
+            "n_min": 5,
+            "cost": 8.893401015228426,
+            "accuracy": 0.6142131979695431,
+            "calibration_cost": 8.841836734693878,
+            "calibration_accuracy": 0.5561224489795918
+          },
+          {
+            "theta": 0.95,
+            "n_min": 2,
+            "cost": 6.715736040609137,
+            "accuracy": 0.6142131979695431,
+            "calibration_cost": 6.9438775510204085,
+            "calibration_accuracy": 0.5561224489795918
+          },
+          {
+            "theta": 0.95,
+            "n_min": 3,
+            "cost": 8.680203045685278,
+            "accuracy": 0.6142131979695431,
+            "calibration_cost": 8.73469387755102,
+            "calibration_accuracy": 0.5561224489795918
+          },
+          {
+            "theta": 0.95,
+            "n_min": 4,
+            "cost": 9.223350253807107,
+            "accuracy": 0.6142131979695431,
+            "calibration_cost": 9.377551020408163,
+            "calibration_accuracy": 0.5561224489795918
+          },
+          {
+            "theta": 0.95,
+            "n_min": 5,
+            "cost": 9.710659898477157,
+            "accuracy": 0.6142131979695431,
+            "calibration_cost": 9.755102040816327,
+            "calibration_accuracy": 0.5561224489795918
+          },
+          {
+            "theta": 0.99,
+            "n_min": 2,
+            "cost": 7.258883248730965,
+            "accuracy": 0.6142131979695431,
+            "calibration_cost": 7.596938775510204,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.99,
+            "n_min": 3,
+            "cost": 9.842639593908629,
+            "accuracy": 0.6091370558375635,
+            "calibration_cost": 9.88265306122449,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.99,
+            "n_min": 4,
+            "cost": 10.51269035532995,
+            "accuracy": 0.6091370558375635,
+            "calibration_cost": 10.714285714285714,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.99,
+            "n_min": 5,
+            "cost": 11.081218274111675,
+            "accuracy": 0.6091370558375635,
+            "calibration_cost": 11.127551020408163,
+            "calibration_accuracy": 0.5612244897959183
+          }
+        ],
+        "vote_threshold_grid": [
+          {
+            "theta": 0.5,
+            "n_min": 2,
+            "cost": 2.0,
+            "accuracy": 0.5279187817258884,
+            "calibration_cost": 2.0,
+            "calibration_accuracy": 0.5051020408163265
+          },
+          {
+            "theta": 0.5,
+            "n_min": 3,
+            "cost": 6.746192893401015,
+            "accuracy": 0.6192893401015228,
+            "calibration_cost": 7.4438775510204085,
+            "calibration_accuracy": 0.5408163265306123
+          },
+          {
+            "theta": 0.5,
+            "n_min": 4,
+            "cost": 7.411167512690355,
+            "accuracy": 0.6243654822335025,
+            "calibration_cost": 8.081632653061224,
+            "calibration_accuracy": 0.5357142857142857
+          },
+          {
+            "theta": 0.5,
+            "n_min": 5,
+            "cost": 9.578680203045685,
+            "accuracy": 0.6395939086294417,
+            "calibration_cost": 9.831632653061224,
+            "calibration_accuracy": 0.5561224489795918
+          },
+          {
+            "theta": 0.6,
+            "n_min": 2,
+            "cost": 7.2030456852791875,
+            "accuracy": 0.6345177664974619,
+            "calibration_cost": 7.8061224489795915,
+            "calibration_accuracy": 0.5561224489795918
+          },
+          {
+            "theta": 0.6,
+            "n_min": 3,
+            "cost": 7.781725888324873,
+            "accuracy": 0.6345177664974619,
+            "calibration_cost": 8.36734693877551,
+            "calibration_accuracy": 0.5561224489795918
+          },
+          {
+            "theta": 0.6,
+            "n_min": 4,
+            "cost": 10.598984771573605,
+            "accuracy": 0.6395939086294417,
+            "calibration_cost": 10.709183673469388,
+            "calibration_accuracy": 0.5561224489795918
+          },
+          {
+            "theta": 0.6,
+            "n_min": 5,
+            "cost": 11.01015228426396,
+            "accuracy": 0.6395939086294417,
+            "calibration_cost": 11.14795918367347,
+            "calibration_accuracy": 0.5561224489795918
+          },
+          {
+            "theta": 0.7,
+            "n_min": 2,
+            "cost": 8.147208121827411,
+            "accuracy": 0.6345177664974619,
+            "calibration_cost": 8.479591836734693,
+            "calibration_accuracy": 0.5663265306122449
+          },
+          {
+            "theta": 0.7,
+            "n_min": 3,
+            "cost": 11.446700507614214,
+            "accuracy": 0.6395939086294417,
+            "calibration_cost": 11.244897959183673,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.7,
+            "n_min": 4,
+            "cost": 11.761421319796954,
+            "accuracy": 0.6395939086294417,
+            "calibration_cost": 11.566326530612244,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.7,
+            "n_min": 5,
+            "cost": 12.644670050761421,
+            "accuracy": 0.6345177664974619,
+            "calibration_cost": 12.60204081632653,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.75,
+            "n_min": 2,
+            "cost": 8.223350253807107,
+            "accuracy": 0.6345177664974619,
+            "calibration_cost": 8.520408163265307,
+            "calibration_accuracy": 0.5663265306122449
+          },
+          {
+            "theta": 0.75,
+            "n_min": 3,
+            "cost": 11.614213197969542,
+            "accuracy": 0.6395939086294417,
+            "calibration_cost": 11.35204081632653,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.75,
+            "n_min": 4,
+            "cost": 11.928934010152284,
+            "accuracy": 0.6395939086294417,
+            "calibration_cost": 11.673469387755102,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.75,
+            "n_min": 5,
+            "cost": 12.898477157360405,
+            "accuracy": 0.6345177664974619,
+            "calibration_cost": 12.872448979591837,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.8,
+            "n_min": 2,
+            "cost": 8.411167512690355,
+            "accuracy": 0.6345177664974619,
+            "calibration_cost": 8.821428571428571,
+            "calibration_accuracy": 0.5663265306122449
+          },
+          {
+            "theta": 0.8,
+            "n_min": 3,
+            "cost": 12.294416243654823,
+            "accuracy": 0.6345177664974619,
+            "calibration_cost": 12.173469387755102,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.8,
+            "n_min": 4,
+            "cost": 12.908629441624365,
+            "accuracy": 0.6345177664974619,
+            "calibration_cost": 12.83673469387755,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.8,
+            "n_min": 5,
+            "cost": 13.17258883248731,
+            "accuracy": 0.6345177664974619,
+            "calibration_cost": 13.091836734693878,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.85,
+            "n_min": 2,
+            "cost": 8.573604060913706,
+            "accuracy": 0.6345177664974619,
+            "calibration_cost": 8.964285714285714,
+            "calibration_accuracy": 0.5663265306122449
+          },
+          {
+            "theta": 0.85,
+            "n_min": 3,
+            "cost": 12.791878172588833,
+            "accuracy": 0.6345177664974619,
+            "calibration_cost": 12.668367346938776,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.85,
+            "n_min": 4,
+            "cost": 13.649746192893401,
+            "accuracy": 0.6345177664974619,
+            "calibration_cost": 13.561224489795919,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.85,
+            "n_min": 5,
+            "cost": 14.050761421319796,
+            "accuracy": 0.6345177664974619,
+            "calibration_cost": 14.045918367346939,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.9,
+            "n_min": 2,
+            "cost": 8.700507614213198,
+            "accuracy": 0.6345177664974619,
+            "calibration_cost": 9.020408163265307,
+            "calibration_accuracy": 0.5663265306122449
+          },
+          {
+            "theta": 0.9,
+            "n_min": 3,
+            "cost": 13.076142131979696,
+            "accuracy": 0.6345177664974619,
+            "calibration_cost": 13.056122448979592,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.9,
+            "n_min": 4,
+            "cost": 13.97969543147208,
+            "accuracy": 0.6345177664974619,
+            "calibration_cost": 14.10204081632653,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.9,
+            "n_min": 5,
+            "cost": 14.568527918781726,
+            "accuracy": 0.6345177664974619,
+            "calibration_cost": 14.673469387755102,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.95,
+            "n_min": 2,
+            "cost": 8.741116751269036,
+            "accuracy": 0.6345177664974619,
+            "calibration_cost": 9.020408163265307,
+            "calibration_accuracy": 0.5663265306122449
+          },
+          {
+            "theta": 0.95,
+            "n_min": 3,
+            "cost": 13.279187817258883,
+            "accuracy": 0.6345177664974619,
+            "calibration_cost": 13.178571428571429,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.95,
+            "n_min": 4,
+            "cost": 14.304568527918782,
+            "accuracy": 0.6345177664974619,
+            "calibration_cost": 14.428571428571429,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.95,
+            "n_min": 5,
+            "cost": 15.096446700507615,
+            "accuracy": 0.6345177664974619,
+            "calibration_cost": 15.081632653061224,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.99,
+            "n_min": 2,
+            "cost": 8.741116751269036,
+            "accuracy": 0.6345177664974619,
+            "calibration_cost": 9.020408163265307,
+            "calibration_accuracy": 0.5663265306122449
+          },
+          {
+            "theta": 0.99,
+            "n_min": 3,
+            "cost": 13.279187817258883,
+            "accuracy": 0.6345177664974619,
+            "calibration_cost": 13.178571428571429,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.99,
+            "n_min": 4,
+            "cost": 14.304568527918782,
+            "accuracy": 0.6345177664974619,
+            "calibration_cost": 14.428571428571429,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.99,
+            "n_min": 5,
+            "cost": 15.096446700507615,
+            "accuracy": 0.6345177664974619,
+            "calibration_cost": 15.081632653061224,
+            "calibration_accuracy": 0.5612244897959183
+          }
+        ],
+        "fixed_stream_curve": [
+          {
+            "cost": 1.0,
+            "accuracy": 0.5076142131979695
+          },
+          {
+            "cost": 2.0,
+            "accuracy": 0.5279187817258884
+          },
+          {
+            "cost": 3.0,
+            "accuracy": 0.5532994923857868
+          },
+          {
+            "cost": 4.0,
+            "accuracy": 0.5634517766497462
+          },
+          {
+            "cost": 5.0,
+            "accuracy": 0.5786802030456852
+          },
+          {
+            "cost": 6.0,
+            "accuracy": 0.5786802030456852
+          },
+          {
+            "cost": 7.0,
+            "accuracy": 0.5888324873096447
+          },
+          {
+            "cost": 8.0,
+            "accuracy": 0.5888324873096447
+          },
+          {
+            "cost": 9.0,
+            "accuracy": 0.5989847715736041
+          },
+          {
+            "cost": 10.0,
+            "accuracy": 0.5989847715736041
+          },
+          {
+            "cost": 11.0,
+            "accuracy": 0.6091370558375635
+          },
+          {
+            "cost": 12.0,
+            "accuracy": 0.6192893401015228
+          },
+          {
+            "cost": 13.0,
+            "accuracy": 0.6243654822335025
+          },
+          {
+            "cost": 14.0,
+            "accuracy": 0.6192893401015228
+          },
+          {
+            "cost": 15.0,
+            "accuracy": 0.6192893401015228
+          },
+          {
+            "cost": 16.0,
+            "accuracy": 0.6243654822335025
+          },
+          {
+            "cost": 17.0,
+            "accuracy": 0.6243654822335025
+          },
+          {
+            "cost": 18.0,
+            "accuracy": 0.6345177664974619
+          }
+        ],
+        "calibration_selected_targets": {
+          "3": {
+            "theta": 0.5,
+            "n_min": 2,
+            "cost": 2.0,
+            "accuracy": 0.5279187817258884,
+            "calibration_cost": 2.0,
+            "calibration_accuracy": 0.5051020408163265
+          },
+          "5": {
+            "theta": 0.6,
+            "n_min": 2,
+            "cost": 4.883248730964467,
+            "accuracy": 0.5685279187817259,
+            "calibration_cost": 4.938775510204081,
+            "calibration_accuracy": 0.5357142857142857
+          },
+          "8": {
+            "theta": 0.9,
+            "n_min": 3,
+            "cost": 8.035532994923859,
+            "accuracy": 0.6142131979695431,
+            "calibration_cost": 7.938775510204081,
+            "calibration_accuracy": 0.5561224489795918
+          }
+        },
+        "posterior_pareto": [
+          {
+            "theta": 0.5,
+            "n_min": 2,
+            "cost": 2.0,
+            "accuracy": 0.5279187817258884,
+            "calibration_cost": 2.0,
+            "calibration_accuracy": 0.5051020408163265
+          },
+          {
+            "theta": 0.6,
+            "n_min": 2,
+            "cost": 4.883248730964467,
+            "accuracy": 0.5685279187817259,
+            "calibration_cost": 4.938775510204081,
+            "calibration_accuracy": 0.5357142857142857
+          },
+          {
+            "theta": 0.7,
+            "n_min": 2,
+            "cost": 5.111675126903553,
+            "accuracy": 0.583756345177665,
+            "calibration_cost": 5.173469387755102,
+            "calibration_accuracy": 0.5459183673469388
+          },
+          {
+            "theta": 0.8,
+            "n_min": 2,
+            "cost": 5.5126903553299496,
+            "accuracy": 0.6091370558375635,
+            "calibration_cost": 5.525510204081633,
+            "calibration_accuracy": 0.5612244897959183
+          },
+          {
+            "theta": 0.85,
+            "n_min": 2,
+            "cost": 6.116751269035533,
+            "accuracy": 0.6142131979695431,
+            "calibration_cost": 6.331632653061225,
+            "calibration_accuracy": 0.5612244897959183
+          }
+        ],
+        "posterior_minimum_to_single9": {
+          "theta": 0.8,
+          "n_min": 2,
+          "cost": 5.5126903553299496,
+          "accuracy": 0.6091370558375635,
+          "calibration_cost": 5.525510204081633,
+          "calibration_accuracy": 0.5612244897959183
+        },
+        "posterior_minimum_to_team18": null,
+        "vote_threshold_pareto": [
+          {
+            "theta": 0.5,
+            "n_min": 2,
+            "cost": 2.0,
+            "accuracy": 0.5279187817258884,
+            "calibration_cost": 2.0,
+            "calibration_accuracy": 0.5051020408163265
+          },
+          {
+            "theta": 0.5,
+            "n_min": 3,
+            "cost": 6.746192893401015,
+            "accuracy": 0.6192893401015228,
+            "calibration_cost": 7.4438775510204085,
+            "calibration_accuracy": 0.5408163265306123
+          },
+          {
+            "theta": 0.6,
+            "n_min": 2,
+            "cost": 7.2030456852791875,
+            "accuracy": 0.6345177664974619,
+            "calibration_cost": 7.8061224489795915,
+            "calibration_accuracy": 0.5561224489795918
+          },
+          {
+            "theta": 0.5,
+            "n_min": 5,
+            "cost": 9.578680203045685,
+            "accuracy": 0.6395939086294417,
+            "calibration_cost": 9.831632653061224,
+            "calibration_accuracy": 0.5561224489795918
+          }
+        ],
+        "vote_threshold_minimum_to_single9": {
+          "theta": 0.5,
+          "n_min": 3,
+          "cost": 6.746192893401015,
+          "accuracy": 0.6192893401015228,
+          "calibration_cost": 7.4438775510204085,
+          "calibration_accuracy": 0.5408163265306123
+        },
+        "vote_threshold_minimum_to_team18": {
+          "theta": 0.6,
+          "n_min": 2,
+          "cost": 7.2030456852791875,
+          "accuracy": 0.6345177664974619,
+          "calibration_cost": 7.8061224489795915,
+          "calibration_accuracy": 0.5561224489795918
+        },
+        "fixed_stream_pareto": [
+          {
+            "cost": 1.0,
+            "accuracy": 0.5076142131979695
+          },
+          {
+            "cost": 2.0,
+            "accuracy": 0.5279187817258884
+          },
+          {
+            "cost": 3.0,
+            "accuracy": 0.5532994923857868
+          },
+          {
+            "cost": 4.0,
+            "accuracy": 0.5634517766497462
+          },
+          {
+            "cost": 5.0,
+            "accuracy": 0.5786802030456852
+          },
+          {
+            "cost": 7.0,
+            "accuracy": 0.5888324873096447
+          },
+          {
+            "cost": 9.0,
+            "accuracy": 0.5989847715736041
+          },
+          {
+            "cost": 11.0,
+            "accuracy": 0.6091370558375635
+          },
+          {
+            "cost": 12.0,
+            "accuracy": 0.6192893401015228
+          },
+          {
+            "cost": 13.0,
+            "accuracy": 0.6243654822335025
+          },
+          {
+            "cost": 18.0,
+            "accuracy": 0.6345177664974619
+          }
+        ],
+        "fixed_stream_minimum_to_single9": {
+          "cost": 7.0,
+          "accuracy": 0.5888324873096447
+        },
+        "fixed_stream_minimum_to_team18": {
+          "cost": 18.0,
+          "accuracy": 0.6345177664974619
+        }
+      }
+    },
+    "gsm8k": {
+      "n": 300,
+      "n_cal": 150,
+      "n_eval": 150,
+      "calibration_qids": [
+        "gsm8k:0218",
+        "gsm8k:0220",
+        "gsm8k:0222",
+        "gsm8k:0223",
+        "gsm8k:0224",
+        "gsm8k:0225",
+        "gsm8k:0228",
+        "gsm8k:0229",
+        "gsm8k:0230",
+        "gsm8k:0232",
+        "gsm8k:0233",
+        "gsm8k:0235",
+        "gsm8k:0237",
+        "gsm8k:0241",
+        "gsm8k:0242",
+        "gsm8k:0245",
+        "gsm8k:0247",
+        "gsm8k:0249",
+        "gsm8k:0251",
+        "gsm8k:0253",
+        "gsm8k:0254",
+        "gsm8k:0257",
+        "gsm8k:0258",
+        "gsm8k:0260",
+        "gsm8k:0266",
+        "gsm8k:0267",
+        "gsm8k:0269",
+        "gsm8k:0274",
+        "gsm8k:0275",
+        "gsm8k:0277",
+        "gsm8k:0278",
+        "gsm8k:0279",
+        "gsm8k:0281",
+        "gsm8k:0282",
+        "gsm8k:0284",
+        "gsm8k:0286",
+        "gsm8k:0289",
+        "gsm8k:0291",
+        "gsm8k:0294",
+        "gsm8k:0295",
+        "gsm8k:0297",
+        "gsm8k:0298",
+        "gsm8k:0299",
+        "gsm8k:0301",
+        "gsm8k:0304",
+        "gsm8k:0305",
+        "gsm8k:0307",
+        "gsm8k:0309",
+        "gsm8k:0310",
+        "gsm8k:0313",
+        "gsm8k:0318",
+        "gsm8k:0321",
+        "gsm8k:0334",
+        "gsm8k:0335",
+        "gsm8k:0338",
+        "gsm8k:0343",
+        "gsm8k:0345",
+        "gsm8k:0346",
+        "gsm8k:0347",
+        "gsm8k:0349",
+        "gsm8k:0350",
+        "gsm8k:0351",
+        "gsm8k:0357",
+        "gsm8k:0359",
+        "gsm8k:0360",
+        "gsm8k:0362",
+        "gsm8k:0363",
+        "gsm8k:0365",
+        "gsm8k:0366",
+        "gsm8k:0367",
+        "gsm8k:0368",
+        "gsm8k:0369",
+        "gsm8k:0370",
+        "gsm8k:0371",
+        "gsm8k:0373",
+        "gsm8k:0376",
+        "gsm8k:0382",
+        "gsm8k:0383",
+        "gsm8k:0384",
+        "gsm8k:0386",
+        "gsm8k:0389",
+        "gsm8k:0393",
+        "gsm8k:0395",
+        "gsm8k:0396",
+        "gsm8k:0397",
+        "gsm8k:0398",
+        "gsm8k:0402",
+        "gsm8k:0403",
+        "gsm8k:0404",
+        "gsm8k:0405",
+        "gsm8k:0407",
+        "gsm8k:0408",
+        "gsm8k:0409",
+        "gsm8k:0410",
+        "gsm8k:0411",
+        "gsm8k:0414",
+        "gsm8k:0416",
+        "gsm8k:0417",
+        "gsm8k:0418",
+        "gsm8k:0419",
+        "gsm8k:0422",
+        "gsm8k:0424",
+        "gsm8k:0425",
+        "gsm8k:0429",
+        "gsm8k:0430",
+        "gsm8k:0432",
+        "gsm8k:0435",
+        "gsm8k:0436",
+        "gsm8k:0438",
+        "gsm8k:0439",
+        "gsm8k:0440",
+        "gsm8k:0441",
+        "gsm8k:0443",
+        "gsm8k:0445",
+        "gsm8k:0446",
+        "gsm8k:0447",
+        "gsm8k:0448",
+        "gsm8k:0454",
+        "gsm8k:0456",
+        "gsm8k:0457",
+        "gsm8k:0458",
+        "gsm8k:0459",
+        "gsm8k:0460",
+        "gsm8k:0462",
+        "gsm8k:0465",
+        "gsm8k:0466",
+        "gsm8k:0469",
+        "gsm8k:0470",
+        "gsm8k:0472",
+        "gsm8k:0473",
+        "gsm8k:0476",
+        "gsm8k:0477",
+        "gsm8k:0478",
+        "gsm8k:0479",
+        "gsm8k:0480",
+        "gsm8k:0482",
+        "gsm8k:0488",
+        "gsm8k:0490",
+        "gsm8k:0491",
+        "gsm8k:0492",
+        "gsm8k:0493",
+        "gsm8k:0495",
+        "gsm8k:0496",
+        "gsm8k:0497",
+        "gsm8k:0500",
+        "gsm8k:0505",
+        "gsm8k:0507",
+        "gsm8k:0509",
+        "gsm8k:0510",
+        "gsm8k:0512"
+      ],
+      "evaluation_qids": [
+        "gsm8k:0215",
+        "gsm8k:0216",
+        "gsm8k:0217",
+        "gsm8k:0219",
+        "gsm8k:0221",
+        "gsm8k:0226",
+        "gsm8k:0227",
+        "gsm8k:0231",
+        "gsm8k:0234",
+        "gsm8k:0236",
+        "gsm8k:0238",
+        "gsm8k:0239",
+        "gsm8k:0240",
+        "gsm8k:0243",
+        "gsm8k:0244",
+        "gsm8k:0246",
+        "gsm8k:0248",
+        "gsm8k:0250",
+        "gsm8k:0252",
+        "gsm8k:0255",
+        "gsm8k:0256",
+        "gsm8k:0259",
+        "gsm8k:0261",
+        "gsm8k:0262",
+        "gsm8k:0263",
+        "gsm8k:0264",
+        "gsm8k:0265",
+        "gsm8k:0268",
+        "gsm8k:0270",
+        "gsm8k:0271",
+        "gsm8k:0272",
+        "gsm8k:0273",
+        "gsm8k:0276",
+        "gsm8k:0280",
+        "gsm8k:0283",
+        "gsm8k:0285",
+        "gsm8k:0287",
+        "gsm8k:0288",
+        "gsm8k:0290",
+        "gsm8k:0292",
+        "gsm8k:0293",
+        "gsm8k:0296",
+        "gsm8k:0300",
+        "gsm8k:0302",
+        "gsm8k:0303",
+        "gsm8k:0306",
+        "gsm8k:0308",
+        "gsm8k:0311",
+        "gsm8k:0312",
+        "gsm8k:0314",
+        "gsm8k:0315",
+        "gsm8k:0316",
+        "gsm8k:0317",
+        "gsm8k:0319",
+        "gsm8k:0320",
+        "gsm8k:0322",
+        "gsm8k:0323",
+        "gsm8k:0324",
+        "gsm8k:0325",
+        "gsm8k:0326",
+        "gsm8k:0327",
+        "gsm8k:0328",
+        "gsm8k:0329",
+        "gsm8k:0330",
+        "gsm8k:0331",
+        "gsm8k:0332",
+        "gsm8k:0333",
+        "gsm8k:0336",
+        "gsm8k:0337",
+        "gsm8k:0339",
+        "gsm8k:0340",
+        "gsm8k:0341",
+        "gsm8k:0342",
+        "gsm8k:0344",
+        "gsm8k:0348",
+        "gsm8k:0352",
+        "gsm8k:0353",
+        "gsm8k:0354",
+        "gsm8k:0355",
+        "gsm8k:0356",
+        "gsm8k:0358",
+        "gsm8k:0361",
+        "gsm8k:0364",
+        "gsm8k:0372",
+        "gsm8k:0374",
+        "gsm8k:0375",
+        "gsm8k:0377",
+        "gsm8k:0378",
+        "gsm8k:0379",
+        "gsm8k:0380",
+        "gsm8k:0381",
+        "gsm8k:0385",
+        "gsm8k:0387",
+        "gsm8k:0388",
+        "gsm8k:0390",
+        "gsm8k:0391",
+        "gsm8k:0392",
+        "gsm8k:0394",
+        "gsm8k:0399",
+        "gsm8k:0400",
+        "gsm8k:0401",
+        "gsm8k:0406",
+        "gsm8k:0412",
+        "gsm8k:0413",
+        "gsm8k:0415",
+        "gsm8k:0420",
+        "gsm8k:0421",
+        "gsm8k:0423",
+        "gsm8k:0426",
+        "gsm8k:0427",
+        "gsm8k:0428",
+        "gsm8k:0431",
+        "gsm8k:0433",
+        "gsm8k:0434",
+        "gsm8k:0437",
+        "gsm8k:0442",
+        "gsm8k:0444",
+        "gsm8k:0449",
+        "gsm8k:0450",
+        "gsm8k:0451",
+        "gsm8k:0452",
+        "gsm8k:0453",
+        "gsm8k:0455",
+        "gsm8k:0461",
+        "gsm8k:0463",
+        "gsm8k:0464",
+        "gsm8k:0467",
+        "gsm8k:0468",
+        "gsm8k:0471",
+        "gsm8k:0474",
+        "gsm8k:0475",
+        "gsm8k:0481",
+        "gsm8k:0483",
+        "gsm8k:0484",
+        "gsm8k:0485",
+        "gsm8k:0486",
+        "gsm8k:0487",
+        "gsm8k:0489",
+        "gsm8k:0494",
+        "gsm8k:0498",
+        "gsm8k:0499",
+        "gsm8k:0501",
+        "gsm8k:0502",
+        "gsm8k:0503",
+        "gsm8k:0504",
+        "gsm8k:0506",
+        "gsm8k:0508",
+        "gsm8k:0511",
+        "gsm8k:0513",
+        "gsm8k:0514"
+      ],
+      "order": [
+        "llama",
+        "qwen",
+        "mistral"
+      ],
+      "cal9": {
+        "qwen": 0.8866666666666667,
+        "llama": 0.92,
+        "mistral": 0.06666666666666667
+      },
+      "rel_cal": {
+        "llama": 0.8517289777999169,
+        "qwen": 0.8769090170278023
+      },
+      "calibration_calls": 4050,
+      "allocation": {
+        "6": {
+          "budget": 6,
+          "splits": {
+            "two": {
+              "llama": 3,
+              "qwen": 3
+            },
+            "three": {
+              "llama": 2,
+              "qwen": 2,
+              "mistral": 2
+            }
+          },
+          "two": 0.9333333333333333,
+          "three": 0.8933333333333333,
+          "three_minus_two": {
+            "delta": -0.04,
+            "ci": [
+              -0.07333333333333333,
+              -0.013333333333333334
+            ],
+            "p": 0.03125,
+            "p_holm": 0.21875859098508954,
+            "holm_family_size": 12
+          },
+          "single": 0.9133333333333333,
+          "two_minus_single": {
+            "delta": 0.02,
+            "ci": [
+              -0.013333333333333334,
+              0.05333333333333334
+            ],
+            "p": 0.453125,
+            "p_holm": 1.0,
+            "holm_family_size": 6
+          },
+          "single_model": "llama",
+          "single_arms": {
+            "qwen": 0.8933333333333333,
+            "llama": 0.9133333333333333,
+            "mistral": 0.04666666666666667
+          }
+        },
+        "9": {
+          "budget": 9,
+          "splits": {
+            "two": {
+              "llama": 5,
+              "qwen": 4
+            },
+            "three": {
+              "llama": 3,
+              "qwen": 3,
+              "mistral": 3
+            }
+          },
+          "two": 0.9466666666666667,
+          "three": 0.9133333333333333,
+          "three_minus_two": {
+            "delta": -0.03333333333333333,
+            "ci": [
+              -0.06666666666666667,
+              -0.006666666666666667
+            ],
+            "p": 0.0625,
+            "p_holm": 0.286865234375,
+            "holm_family_size": 12
+          },
+          "single": 0.9333333333333333,
+          "two_minus_single": {
+            "delta": 0.013333333333333334,
+            "ci": [
+              0.0,
+              0.03333333333333333
+            ],
+            "p": 0.5,
+            "p_holm": 1.0,
+            "holm_family_size": 6
+          },
+          "single_model": "llama",
+          "single_arms": {
+            "qwen": 0.9066666666666666,
+            "llama": 0.9333333333333333,
+            "mistral": 0.06
+          }
+        },
+        "12": {
+          "budget": 12,
+          "splits": {
+            "two": {
+              "llama": 6,
+              "qwen": 6
+            },
+            "three": {
+              "llama": 4,
+              "qwen": 4,
+              "mistral": 4
+            }
+          },
+          "two": 0.94,
+          "three": 0.9266666666666666,
+          "three_minus_two": {
+            "delta": -0.013333333333333334,
+            "ci": [
+              -0.03333333333333333,
+              0.0
+            ],
+            "p": 0.5,
+            "p_holm": 1.0,
+            "holm_family_size": 12
+          },
+          "single": null,
+          "two_minus_single": null
+        },
+        "18": {
+          "budget": 18,
+          "splits": {
+            "two": {
+              "llama": 9,
+              "qwen": 9
+            },
+            "three": {
+              "llama": 6,
+              "qwen": 6,
+              "mistral": 6
+            }
+          },
+          "two": 0.94,
+          "three": 0.94,
+          "three_minus_two": {
+            "delta": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "p": 1.0,
+            "p_holm": 1.0,
+            "holm_family_size": 12
+          },
+          "single": null,
+          "two_minus_single": null
+        }
+      },
+      "fixed_pools": {
+        "2x4": {
+          "budget": 8,
+          "split": {
+            "llama": 4,
+            "qwen": 4
+          },
+          "majority": 0.94,
+          "onecoin": 0.94,
+          "cal_weighted": 0.9466666666666667,
+          "reliabilities": {
+            "llama": 0.8303999697781889,
+            "qwen": 0.8875812245904702
+          },
+          "coverage_ceiling": 0.9666666666666667,
+          "member_selection_oracle": 0.9466666666666667,
+          "gap_coverage": 0.026666666666666727,
+          "gap_member": 0.00666666666666671,
+          "weighted_minus_onecoin": {
+            "delta": 0.006666666666666667,
+            "ci": [
+              0.0,
+              0.02
+            ],
+            "p": 1.0,
+            "p_holm": 1.0,
+            "holm_family_size": 12
+          },
+          "onecoin_minus_majority": {
+            "delta": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "p": 1.0,
+            "p_holm": 1.0,
+            "holm_family_size": 12
+          },
+          "multi_coin": null,
+          "multicoin_minus_onecoin": null
+        },
+        "3x3": {
+          "budget": 9,
+          "split": {
+            "llama": 3,
+            "qwen": 3,
+            "mistral": 3
+          },
+          "majority": 0.9133333333333333,
+          "onecoin": 0.9333333333333333,
+          "cal_weighted": 0.9333333333333333,
+          "reliabilities": {
+            "llama": 0.8355797571987144,
+            "qwen": 0.8819784797367717,
+            "mistral": 0.04929586680108839
+          },
+          "coverage_ceiling": 0.9666666666666667,
+          "member_selection_oracle": 0.9533333333333334,
+          "gap_coverage": 0.033333333333333326,
+          "gap_member": 0.020000000000000018,
+          "weighted_minus_onecoin": {
+            "delta": 0.0,
+            "ci": [
+              -0.02666666666666667,
+              0.02666666666666667
+            ],
+            "p": 1.0,
+            "p_holm": 1.0,
+            "holm_family_size": 12
+          },
+          "onecoin_minus_majority": {
+            "delta": 0.02,
+            "ci": [
+              -0.006666666666666667,
+              0.04666666666666667
+            ],
+            "p": 0.375,
+            "p_holm": 1.0,
+            "holm_family_size": 12
+          },
+          "multi_coin": null,
+          "multicoin_minus_onecoin": null
+        },
+        "2x9": {
+          "budget": 18,
+          "split": {
+            "llama": 9,
+            "qwen": 9
+          },
+          "majority": 0.94,
+          "onecoin": 0.94,
+          "cal_weighted": 0.9466666666666667,
+          "reliabilities": {
+            "llama": 0.8370158573505522,
+            "qwen": 0.8686868098218703
+          },
+          "coverage_ceiling": 0.9866666666666667,
+          "member_selection_oracle": 0.9466666666666667,
+          "gap_coverage": 0.046666666666666745,
+          "gap_member": 0.00666666666666671,
+          "weighted_minus_onecoin": {
+            "delta": 0.006666666666666667,
+            "ci": [
+              0.0,
+              0.02
+            ],
+            "p": 1.0,
+            "p_holm": 1.0,
+            "holm_family_size": 12
+          },
+          "onecoin_minus_majority": {
+            "delta": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "p": 1.0,
+            "p_holm": 1.0,
+            "holm_family_size": 12
+          },
+          "multi_coin": null,
+          "multicoin_minus_onecoin": null
+        },
+        "3x9": {
+          "budget": 27,
+          "split": {
+            "llama": 9,
+            "qwen": 9,
+            "mistral": 9
+          },
+          "majority": 0.94,
+          "onecoin": 0.9466666666666667,
+          "cal_weighted": 0.94,
+          "reliabilities": {
+            "llama": 0.8415366711189246,
+            "qwen": 0.8607877927626815,
+            "mistral": 0.04794300521530674
+          },
+          "coverage_ceiling": 0.9866666666666667,
+          "member_selection_oracle": 0.9466666666666667,
+          "gap_coverage": 0.040000000000000036,
+          "gap_member": 0.0,
+          "weighted_minus_onecoin": {
+            "delta": -0.006666666666666667,
+            "ci": [
+              -0.02,
+              0.0
+            ],
+            "p": 1.0,
+            "p_holm": 1.0,
+            "holm_family_size": 12
+          },
+          "onecoin_minus_majority": {
+            "delta": 0.006666666666666667,
+            "ci": [
+              0.0,
+              0.02
+            ],
+            "p": 1.0,
+            "p_holm": 1.0,
+            "holm_family_size": 12
+          },
+          "multi_coin": null,
+          "multicoin_minus_onecoin": null
+        }
+      },
+      "stopping": {
+        "single9_reference": {
+          "model": "llama",
+          "accuracy": 0.9333333333333333,
+          "arms": {
+            "qwen": 0.9066666666666666,
+            "llama": 0.9333333333333333,
+            "mistral": 0.06
+          },
+          "selection": "post-hoc strongest eval arm"
+        },
+        "team18_reference": 0.94,
+        "posterior_grid": [
+          {
+            "theta": 0.5,
+            "n_min": 2,
+            "cost": 2.0,
+            "accuracy": 0.8333333333333334,
+            "calibration_cost": 2.0,
+            "calibration_accuracy": 0.8466666666666667
+          },
+          {
+            "theta": 0.5,
+            "n_min": 3,
+            "cost": 3.1666666666666665,
+            "accuracy": 0.9266666666666666,
+            "calibration_cost": 3.1533333333333333,
+            "calibration_accuracy": 0.9
+          },
+          {
+            "theta": 0.5,
+            "n_min": 4,
+            "cost": 4.046666666666667,
+            "accuracy": 0.92,
+            "calibration_cost": 4.08,
+            "calibration_accuracy": 0.8933333333333333
+          },
+          {
+            "theta": 0.5,
+            "n_min": 5,
+            "cost": 5.006666666666667,
+            "accuracy": 0.92,
+            "calibration_cost": 5.066666666666666,
+            "calibration_accuracy": 0.9066666666666666
+          },
+          {
+            "theta": 0.6,
+            "n_min": 2,
+            "cost": 2.3933333333333335,
+            "accuracy": 0.9266666666666666,
+            "calibration_cost": 2.34,
+            "calibration_accuracy": 0.9
+          },
+          {
+            "theta": 0.6,
+            "n_min": 3,
+            "cost": 3.1666666666666665,
+            "accuracy": 0.9266666666666666,
+            "calibration_cost": 3.1533333333333333,
+            "calibration_accuracy": 0.9
+          },
+          {
+            "theta": 0.6,
+            "n_min": 4,
+            "cost": 4.053333333333334,
+            "accuracy": 0.9266666666666666,
+            "calibration_cost": 4.08,
+            "calibration_accuracy": 0.8933333333333333
+          },
+          {
+            "theta": 0.6,
+            "n_min": 5,
+            "cost": 5.04,
+            "accuracy": 0.9266666666666666,
+            "calibration_cost": 5.113333333333333,
+            "calibration_accuracy": 0.8933333333333333
+          },
+          {
+            "theta": 0.7,
+            "n_min": 2,
+            "cost": 2.3933333333333335,
+            "accuracy": 0.9266666666666666,
+            "calibration_cost": 2.34,
+            "calibration_accuracy": 0.9
+          },
+          {
+            "theta": 0.7,
+            "n_min": 3,
+            "cost": 3.1666666666666665,
+            "accuracy": 0.9266666666666666,
+            "calibration_cost": 3.1533333333333333,
+            "calibration_accuracy": 0.9
+          },
+          {
+            "theta": 0.7,
+            "n_min": 4,
+            "cost": 4.08,
+            "accuracy": 0.9266666666666666,
+            "calibration_cost": 4.1,
+            "calibration_accuracy": 0.9
+          },
+          {
+            "theta": 0.7,
+            "n_min": 5,
+            "cost": 5.04,
+            "accuracy": 0.9266666666666666,
+            "calibration_cost": 5.113333333333333,
+            "calibration_accuracy": 0.8933333333333333
+          },
+          {
+            "theta": 0.75,
+            "n_min": 2,
+            "cost": 2.3933333333333335,
+            "accuracy": 0.9266666666666666,
+            "calibration_cost": 2.34,
+            "calibration_accuracy": 0.9
+          },
+          {
+            "theta": 0.75,
+            "n_min": 3,
+            "cost": 3.1666666666666665,
+            "accuracy": 0.9266666666666666,
+            "calibration_cost": 3.1533333333333333,
+            "calibration_accuracy": 0.9
+          },
+          {
+            "theta": 0.75,
+            "n_min": 4,
+            "cost": 4.08,
+            "accuracy": 0.9266666666666666,
+            "calibration_cost": 4.1,
+            "calibration_accuracy": 0.9
+          },
+          {
+            "theta": 0.75,
+            "n_min": 5,
+            "cost": 5.04,
+            "accuracy": 0.9266666666666666,
+            "calibration_cost": 5.113333333333333,
+            "calibration_accuracy": 0.8933333333333333
+          },
+          {
+            "theta": 0.8,
+            "n_min": 2,
+            "cost": 2.3933333333333335,
+            "accuracy": 0.9266666666666666,
+            "calibration_cost": 2.34,
+            "calibration_accuracy": 0.9
+          },
+          {
+            "theta": 0.8,
+            "n_min": 3,
+            "cost": 3.1666666666666665,
+            "accuracy": 0.9266666666666666,
+            "calibration_cost": 3.1533333333333333,
+            "calibration_accuracy": 0.9
+          },
+          {
+            "theta": 0.8,
+            "n_min": 4,
+            "cost": 4.08,
+            "accuracy": 0.9266666666666666,
+            "calibration_cost": 4.1,
+            "calibration_accuracy": 0.9
+          },
+          {
+            "theta": 0.8,
+            "n_min": 5,
+            "cost": 5.04,
+            "accuracy": 0.9266666666666666,
+            "calibration_cost": 5.113333333333333,
+            "calibration_accuracy": 0.8933333333333333
+          },
+          {
+            "theta": 0.85,
+            "n_min": 2,
+            "cost": 2.4066666666666667,
+            "accuracy": 0.9266666666666666,
+            "calibration_cost": 2.34,
+            "calibration_accuracy": 0.9
+          },
+          {
+            "theta": 0.85,
+            "n_min": 3,
+            "cost": 3.3466666666666667,
+            "accuracy": 0.92,
+            "calibration_cost": 3.36,
+            "calibration_accuracy": 0.9
+          },
+          {
+            "theta": 0.85,
+            "n_min": 4,
+            "cost": 4.166666666666667,
+            "accuracy": 0.9266666666666666,
+            "calibration_cost": 4.16,
+            "calibration_accuracy": 0.9
+          },
+          {
+            "theta": 0.85,
+            "n_min": 5,
+            "cost": 5.073333333333333,
+            "accuracy": 0.9266666666666666,
+            "calibration_cost": 5.166666666666667,
+            "calibration_accuracy": 0.8933333333333333
+          },
+          {
+            "theta": 0.9,
+            "n_min": 2,
+            "cost": 2.8333333333333335,
+            "accuracy": 0.94,
+            "calibration_cost": 2.6333333333333333,
+            "calibration_accuracy": 0.9066666666666666
+          },
+          {
+            "theta": 0.9,
+            "n_min": 3,
+            "cost": 3.78,
+            "accuracy": 0.9333333333333333,
+            "calibration_cost": 3.6933333333333334,
+            "calibration_accuracy": 0.9133333333333333
+          },
+          {
+            "theta": 0.9,
+            "n_min": 4,
+            "cost": 4.486666666666666,
+            "accuracy": 0.9333333333333333,
+            "calibration_cost": 4.38,
+            "calibration_accuracy": 0.9133333333333333
+          },
+          {
+            "theta": 0.9,
+            "n_min": 5,
+            "cost": 5.293333333333333,
+            "accuracy": 0.9333333333333333,
+            "calibration_cost": 5.293333333333333,
+            "calibration_accuracy": 0.9066666666666666
+          },
+          {
+            "theta": 0.95,
+            "n_min": 2,
+            "cost": 2.8533333333333335,
+            "accuracy": 0.94,
+            "calibration_cost": 2.6466666666666665,
+            "calibration_accuracy": 0.9066666666666666
+          },
+          {
+            "theta": 0.95,
+            "n_min": 3,
+            "cost": 3.8933333333333335,
+            "accuracy": 0.94,
+            "calibration_cost": 3.82,
+            "calibration_accuracy": 0.92
+          },
+          {
+            "theta": 0.95,
+            "n_min": 4,
+            "cost": 4.6,
+            "accuracy": 0.94,
+            "calibration_cost": 4.506666666666667,
+            "calibration_accuracy": 0.92
+          },
+          {
+            "theta": 0.95,
+            "n_min": 5,
+            "cost": 5.406666666666666,
+            "accuracy": 0.94,
+            "calibration_cost": 5.446666666666666,
+            "calibration_accuracy": 0.92
+          },
+          {
+            "theta": 0.99,
+            "n_min": 2,
+            "cost": 3.08,
+            "accuracy": 0.94,
+            "calibration_cost": 2.86,
+            "calibration_accuracy": 0.9133333333333333
+          },
+          {
+            "theta": 0.99,
+            "n_min": 3,
+            "cost": 4.266666666666667,
+            "accuracy": 0.94,
+            "calibration_cost": 4.226666666666667,
+            "calibration_accuracy": 0.9266666666666666
+          },
+          {
+            "theta": 0.99,
+            "n_min": 4,
+            "cost": 5.013333333333334,
+            "accuracy": 0.94,
+            "calibration_cost": 4.98,
+            "calibration_accuracy": 0.92
+          },
+          {
+            "theta": 0.99,
+            "n_min": 5,
+            "cost": 5.6866666666666665,
+            "accuracy": 0.94,
+            "calibration_cost": 5.64,
+            "calibration_accuracy": 0.92
+          }
+        ],
+        "vote_threshold_grid": [
+          {
+            "theta": 0.5,
+            "n_min": 2,
+            "cost": 2.0,
+            "accuracy": 0.8333333333333334,
+            "calibration_cost": 2.0,
+            "calibration_accuracy": 0.8466666666666667
+          },
+          {
+            "theta": 0.5,
+            "n_min": 3,
+            "cost": 3.506666666666667,
+            "accuracy": 0.9333333333333333,
+            "calibration_cost": 3.26,
+            "calibration_accuracy": 0.9066666666666666
+          },
+          {
+            "theta": 0.5,
+            "n_min": 4,
+            "cost": 4.386666666666667,
+            "accuracy": 0.9266666666666666,
+            "calibration_cost": 4.1866666666666665,
+            "calibration_accuracy": 0.9133333333333333
+          },
+          {
+            "theta": 0.5,
+            "n_min": 5,
+            "cost": 5.453333333333333,
+            "accuracy": 0.9333333333333333,
+            "calibration_cost": 5.286666666666667,
+            "calibration_accuracy": 0.9066666666666666
+          },
+          {
+            "theta": 0.6,
+            "n_min": 2,
+            "cost": 2.966666666666667,
+            "accuracy": 0.9333333333333333,
+            "calibration_cost": 2.6133333333333333,
+            "calibration_accuracy": 0.9066666666666666
+          },
+          {
+            "theta": 0.6,
+            "n_min": 3,
+            "cost": 3.74,
+            "accuracy": 0.9333333333333333,
+            "calibration_cost": 3.4266666666666667,
+            "calibration_accuracy": 0.9066666666666666
+          },
+          {
+            "theta": 0.6,
+            "n_min": 4,
+            "cost": 4.8933333333333335,
+            "accuracy": 0.9333333333333333,
+            "calibration_cost": 4.666666666666667,
+            "calibration_accuracy": 0.9133333333333333
+          },
+          {
+            "theta": 0.6,
+            "n_min": 5,
+            "cost": 5.693333333333333,
+            "accuracy": 0.9333333333333333,
+            "calibration_cost": 5.54,
+            "calibration_accuracy": 0.9133333333333333
+          },
+          {
+            "theta": 0.7,
+            "n_min": 2,
+            "cost": 4.04,
+            "accuracy": 0.94,
+            "calibration_cost": 3.1,
+            "calibration_accuracy": 0.9133333333333333
+          },
+          {
+            "theta": 0.7,
+            "n_min": 3,
+            "cost": 5.426666666666667,
+            "accuracy": 0.94,
+            "calibration_cost": 4.513333333333334,
+            "calibration_accuracy": 0.9266666666666666
+          },
+          {
+            "theta": 0.7,
+            "n_min": 4,
+            "cost": 6.133333333333334,
+            "accuracy": 0.94,
+            "calibration_cost": 5.2,
+            "calibration_accuracy": 0.9266666666666666
+          },
+          {
+            "theta": 0.7,
+            "n_min": 5,
+            "cost": 7.14,
+            "accuracy": 0.94,
+            "calibration_cost": 6.693333333333333,
+            "calibration_accuracy": 0.9266666666666666
+          },
+          {
+            "theta": 0.75,
+            "n_min": 2,
+            "cost": 4.36,
+            "accuracy": 0.94,
+            "calibration_cost": 3.3866666666666667,
+            "calibration_accuracy": 0.9133333333333333
+          },
+          {
+            "theta": 0.75,
+            "n_min": 3,
+            "cost": 5.88,
+            "accuracy": 0.94,
+            "calibration_cost": 4.9,
+            "calibration_accuracy": 0.9266666666666666
+          },
+          {
+            "theta": 0.75,
+            "n_min": 4,
+            "cost": 6.586666666666667,
+            "accuracy": 0.94,
+            "calibration_cost": 5.586666666666667,
+            "calibration_accuracy": 0.9266666666666666
+          },
+          {
+            "theta": 0.75,
+            "n_min": 5,
+            "cost": 7.753333333333333,
+            "accuracy": 0.94,
+            "calibration_cost": 7.173333333333333,
+            "calibration_accuracy": 0.9266666666666666
+          },
+          {
+            "theta": 0.8,
+            "n_min": 2,
+            "cost": 4.74,
+            "accuracy": 0.94,
+            "calibration_cost": 3.86,
+            "calibration_accuracy": 0.92
+          },
+          {
+            "theta": 0.8,
+            "n_min": 3,
+            "cost": 6.32,
+            "accuracy": 0.94,
+            "calibration_cost": 5.806666666666667,
+            "calibration_accuracy": 0.9333333333333333
+          },
+          {
+            "theta": 0.8,
+            "n_min": 4,
+            "cost": 7.1466666666666665,
+            "accuracy": 0.94,
+            "calibration_cost": 6.693333333333333,
+            "calibration_accuracy": 0.9266666666666666
+          },
+          {
+            "theta": 0.8,
+            "n_min": 5,
+            "cost": 7.82,
+            "accuracy": 0.94,
+            "calibration_cost": 7.3533333333333335,
+            "calibration_accuracy": 0.9266666666666666
+          },
+          {
+            "theta": 0.85,
+            "n_min": 2,
+            "cost": 4.96,
+            "accuracy": 0.94,
+            "calibration_cost": 4.18,
+            "calibration_accuracy": 0.92
+          },
+          {
+            "theta": 0.85,
+            "n_min": 3,
+            "cost": 6.733333333333333,
+            "accuracy": 0.94,
+            "calibration_cost": 6.593333333333334,
+            "calibration_accuracy": 0.9333333333333333
+          },
+          {
+            "theta": 0.85,
+            "n_min": 4,
+            "cost": 7.6866666666666665,
+            "accuracy": 0.94,
+            "calibration_cost": 7.506666666666667,
+            "calibration_accuracy": 0.9266666666666666
+          },
+          {
+            "theta": 0.85,
+            "n_min": 5,
+            "cost": 8.413333333333334,
+            "accuracy": 0.94,
+            "calibration_cost": 8.393333333333333,
+            "calibration_accuracy": 0.9266666666666666
+          },
+          {
+            "theta": 0.9,
+            "n_min": 2,
+            "cost": 5.466666666666667,
+            "accuracy": 0.94,
+            "calibration_cost": 4.56,
+            "calibration_accuracy": 0.92
+          },
+          {
+            "theta": 0.9,
+            "n_min": 3,
+            "cost": 7.24,
+            "accuracy": 0.94,
+            "calibration_cost": 7.22,
+            "calibration_accuracy": 0.9333333333333333
+          },
+          {
+            "theta": 0.9,
+            "n_min": 4,
+            "cost": 8.36,
+            "accuracy": 0.94,
+            "calibration_cost": 8.226666666666667,
+            "calibration_accuracy": 0.9266666666666666
+          },
+          {
+            "theta": 0.9,
+            "n_min": 5,
+            "cost": 9.273333333333333,
+            "accuracy": 0.94,
+            "calibration_cost": 9.193333333333333,
+            "calibration_accuracy": 0.9266666666666666
+          },
+          {
+            "theta": 0.95,
+            "n_min": 2,
+            "cost": 5.626666666666667,
+            "accuracy": 0.94,
+            "calibration_cost": 4.986666666666666,
+            "calibration_accuracy": 0.92
+          },
+          {
+            "theta": 0.95,
+            "n_min": 3,
+            "cost": 7.4,
+            "accuracy": 0.94,
+            "calibration_cost": 7.7,
+            "calibration_accuracy": 0.9333333333333333
+          },
+          {
+            "theta": 0.95,
+            "n_min": 4,
+            "cost": 8.573333333333334,
+            "accuracy": 0.94,
+            "calibration_cost": 8.76,
+            "calibration_accuracy": 0.9266666666666666
+          },
+          {
+            "theta": 0.95,
+            "n_min": 5,
+            "cost": 9.593333333333334,
+            "accuracy": 0.94,
+            "calibration_cost": 9.94,
+            "calibration_accuracy": 0.9266666666666666
+          },
+          {
+            "theta": 0.99,
+            "n_min": 2,
+            "cost": 5.626666666666667,
+            "accuracy": 0.94,
+            "calibration_cost": 4.986666666666666,
+            "calibration_accuracy": 0.92
+          },
+          {
+            "theta": 0.99,
+            "n_min": 3,
+            "cost": 7.4,
+            "accuracy": 0.94,
+            "calibration_cost": 7.7,
+            "calibration_accuracy": 0.9333333333333333
+          },
+          {
+            "theta": 0.99,
+            "n_min": 4,
+            "cost": 8.573333333333334,
+            "accuracy": 0.94,
+            "calibration_cost": 8.76,
+            "calibration_accuracy": 0.9266666666666666
+          },
+          {
+            "theta": 0.99,
+            "n_min": 5,
+            "cost": 9.593333333333334,
+            "accuracy": 0.94,
+            "calibration_cost": 9.94,
+            "calibration_accuracy": 0.9266666666666666
+          }
+        ],
+        "fixed_stream_curve": [
+          {
+            "cost": 1.0,
+            "accuracy": 0.8133333333333334
+          },
+          {
+            "cost": 2.0,
+            "accuracy": 0.8333333333333334
+          },
+          {
+            "cost": 3.0,
+            "accuracy": 0.9066666666666666
+          },
+          {
+            "cost": 4.0,
+            "accuracy": 0.9133333333333333
+          },
+          {
+            "cost": 5.0,
+            "accuracy": 0.9133333333333333
+          },
+          {
+            "cost": 6.0,
+            "accuracy": 0.9333333333333333
+          },
+          {
+            "cost": 7.0,
+            "accuracy": 0.94
+          },
+          {
+            "cost": 8.0,
+            "accuracy": 0.94
+          },
+          {
+            "cost": 9.0,
+            "accuracy": 0.94
+          },
+          {
+            "cost": 10.0,
+            "accuracy": 0.94
+          },
+          {
+            "cost": 11.0,
+            "accuracy": 0.94
+          },
+          {
+            "cost": 12.0,
+            "accuracy": 0.94
+          },
+          {
+            "cost": 13.0,
+            "accuracy": 0.94
+          },
+          {
+            "cost": 14.0,
+            "accuracy": 0.94
+          },
+          {
+            "cost": 15.0,
+            "accuracy": 0.94
+          },
+          {
+            "cost": 16.0,
+            "accuracy": 0.94
+          },
+          {
+            "cost": 17.0,
+            "accuracy": 0.94
+          },
+          {
+            "cost": 18.0,
+            "accuracy": 0.94
+          }
+        ],
+        "calibration_selected_targets": {
+          "3": {
+            "theta": 0.99,
+            "n_min": 2,
+            "cost": 3.08,
+            "accuracy": 0.94,
+            "calibration_cost": 2.86,
+            "calibration_accuracy": 0.9133333333333333
+          },
+          "5": {
+            "theta": 0.99,
+            "n_min": 4,
+            "cost": 5.013333333333334,
+            "accuracy": 0.94,
+            "calibration_cost": 4.98,
+            "calibration_accuracy": 0.92
+          },
+          "8": {
+            "theta": 0.99,
+            "n_min": 5,
+            "cost": 5.6866666666666665,
+            "accuracy": 0.94,
+            "calibration_cost": 5.64,
+            "calibration_accuracy": 0.92
+          }
+        },
+        "posterior_pareto": [
+          {
+            "theta": 0.5,
+            "n_min": 2,
+            "cost": 2.0,
+            "accuracy": 0.8333333333333334,
+            "calibration_cost": 2.0,
+            "calibration_accuracy": 0.8466666666666667
+          },
+          {
+            "theta": 0.6,
+            "n_min": 2,
+            "cost": 2.3933333333333335,
+            "accuracy": 0.9266666666666666,
+            "calibration_cost": 2.34,
+            "calibration_accuracy": 0.9
+          },
+          {
+            "theta": 0.9,
+            "n_min": 2,
+            "cost": 2.8333333333333335,
+            "accuracy": 0.94,
+            "calibration_cost": 2.6333333333333333,
+            "calibration_accuracy": 0.9066666666666666
+          }
+        ],
+        "posterior_minimum_to_single9": {
+          "theta": 0.9,
+          "n_min": 2,
+          "cost": 2.8333333333333335,
+          "accuracy": 0.94,
+          "calibration_cost": 2.6333333333333333,
+          "calibration_accuracy": 0.9066666666666666
+        },
+        "posterior_minimum_to_team18": {
+          "theta": 0.9,
+          "n_min": 2,
+          "cost": 2.8333333333333335,
+          "accuracy": 0.94,
+          "calibration_cost": 2.6333333333333333,
+          "calibration_accuracy": 0.9066666666666666
+        },
+        "vote_threshold_pareto": [
+          {
+            "theta": 0.5,
+            "n_min": 2,
+            "cost": 2.0,
+            "accuracy": 0.8333333333333334,
+            "calibration_cost": 2.0,
+            "calibration_accuracy": 0.8466666666666667
+          },
+          {
+            "theta": 0.6,
+            "n_min": 2,
+            "cost": 2.966666666666667,
+            "accuracy": 0.9333333333333333,
+            "calibration_cost": 2.6133333333333333,
+            "calibration_accuracy": 0.9066666666666666
+          },
+          {
+            "theta": 0.7,
+            "n_min": 2,
+            "cost": 4.04,
+            "accuracy": 0.94,
+            "calibration_cost": 3.1,
+            "calibration_accuracy": 0.9133333333333333
+          }
+        ],
+        "vote_threshold_minimum_to_single9": {
+          "theta": 0.6,
+          "n_min": 2,
+          "cost": 2.966666666666667,
+          "accuracy": 0.9333333333333333,
+          "calibration_cost": 2.6133333333333333,
+          "calibration_accuracy": 0.9066666666666666
+        },
+        "vote_threshold_minimum_to_team18": {
+          "theta": 0.7,
+          "n_min": 2,
+          "cost": 4.04,
+          "accuracy": 0.94,
+          "calibration_cost": 3.1,
+          "calibration_accuracy": 0.9133333333333333
+        },
+        "fixed_stream_pareto": [
+          {
+            "cost": 1.0,
+            "accuracy": 0.8133333333333334
+          },
+          {
+            "cost": 2.0,
+            "accuracy": 0.8333333333333334
+          },
+          {
+            "cost": 3.0,
+            "accuracy": 0.9066666666666666
+          },
+          {
+            "cost": 4.0,
+            "accuracy": 0.9133333333333333
+          },
+          {
+            "cost": 6.0,
+            "accuracy": 0.9333333333333333
+          },
+          {
+            "cost": 7.0,
+            "accuracy": 0.94
+          }
+        ],
+        "fixed_stream_minimum_to_single9": {
+          "cost": 6.0,
+          "accuracy": 0.9333333333333333
+        },
+        "fixed_stream_minimum_to_team18": {
+          "cost": 7.0,
+          "accuracy": 0.94
+        }
+      }
+    }
+  }
+}

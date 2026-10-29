@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "reference_values_checked": 15619,
+  "core_evaluation_sizes": {
+    "mmlu_pro": 222,
+    "math500": 197,
+    "gsm8k": 150
+  },
+  "budget18_evaluation_sizes": {
+    "mmlu_pro": 167,
+    "math500": 76
+  },
+  "figures_generated": true
+}

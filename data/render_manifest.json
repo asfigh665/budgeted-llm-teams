@@ -1,0 +1,50 @@
+{
+  "source_version": "portable-replay-1",
+  "source_sha256": "94761abdea412dc2b3d59222a7941ba93768a1929c772f87743c08bdab33b67b",
+  "format": {
+    "rates": "100x, one decimal, ROUND_HALF_UP",
+    "gains": "absolute 100x, signed",
+    "costs": "two decimals",
+    "p_values": "<0.001 or three decimals, unscaled",
+    "MmluWeightPFull": "includes comparison relation for use as p\\MmluWeightPFull",
+    "correlation": "three decimals, unscaled"
+  },
+  "macros": {
+    "CoverageGapMin": "14.4\\%",
+    "CoverageGapMax": "32.0\\%",
+    "GsmCoverageGapMin": "2.7\\%",
+    "GsmCoverageGapMax": "4.7\\%",
+    "StopCallsMin": "2.54",
+    "StopCallsMax": "5.51",
+    "StopSavingsMin": "38.7\\%",
+    "StopSavingsMax": "71.8\\%",
+    "MmluStopCalls": "2.54",
+    "MathStopCalls": "5.51",
+    "GsmStopCalls": "2.83",
+    "MmluOneCoinFull": "60.8\\%",
+    "MmluCoverageFull": "92.8\\%",
+    "MmluWeightedFull": "67.6\\%",
+    "MmluWeightGainFull": "+6.8\\%",
+    "MmluWeightPFull": "<0.001",
+    "MmluTwoNine": "66.2\\%",
+    "MmluThreeNine": "59.9\\%",
+    "MmluAllocationGain": "+6.3\\%",
+    "MmluWeakReliability": "53.5\\%",
+    "MmluWeakCalibration": "25.7\\%"
+  },
+  "generated_files": {
+    "data/generated_numbers.tex": "290da24cac8c38433d2beacb34ffa82aa2df07125ff1e9016c343d2ec41fd95e",
+    "tables/tab_setup_current.tex": "4efb6aef1f9a8d73d20fdb0046f1ad5598a508a1c88a1441796f9e2bf8087368",
+    "tables/tab_headroom_current.tex": "d1e8245a6ef2bdf8c1aeb6ad488e310e1f3d371527ca9b0cd59ab25e78ede942",
+    "tables/tab_allocation_current.tex": "dca5582580b85d1a6aec98260f7d74eda1ddf4a98df390b726ded88637631c34",
+    "tables/tab_s_allocation.tex": "3e377211d9a53de13fe55339cf50239c6c2b18a9d541dce7585cb17bfd794ff0",
+    "tables/tab_s_single.tex": "c218baac376024eb84b03db020a848be7137050fe972d970ccd16a8a2565fede",
+    "tables/tab_aggregation_current.tex": "89e9f355b89018c3fcf2492b4426fe94d1c849d0decf994bb3beaf4a11ba29ca",
+    "tables/tab_stopping_current.tex": "a89cefc347827fcabb119c0e926f7c688e7d09afff2ea6405f0bb31a1b11b941",
+    "tables/tab_s_oracles.tex": "c52240447b41de893ef64b36485b18cd1d8305636ab57f8cafe48d606986a935",
+    "tables/tab_s_readouts.tex": "df9db8c93749a0042fb920bef0424e3f64d1f3aba1207714889e0c4e07c19c16",
+    "tables/tab_s_multicoin.tex": "79acfe583700acd460051a3865c9a44011d3ba73d0936ede0f51da2ad30135ab",
+    "tables/tab_s_calibration_stopping.tex": "15fe43f7ad1f1b97ae47f1f8c86668fa63d01798bb2034f0ccc6ce0c27b38561",
+    "tables/tab_s_correlation.tex": "01445d5ce955fb86912601080f9701e48fa5b2bf976a1f5e6534b9ab46b8c30e"
+  }
+}

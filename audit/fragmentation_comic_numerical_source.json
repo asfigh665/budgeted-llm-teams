@@ -1,0 +1,240 @@
+{
+  "purpose": "Descriptive answer-pool outcomes by distinct normalized-answer count",
+  "pool": {
+    "qwen": 9,
+    "llama": 9
+  },
+  "within_bin_normalization": "100 * category_count / n",
+  "zero_size_bins": "omitted from panels",
+  "source_files": {
+    "data/current_extensions.json": "dd3c3e39f41f4aa68b814d809246d5057dfa0f645aff082fe65e8b5ccd2ad58a",
+    "data/current_results.json": "94761abdea412dc2b3d59222a7941ba93768a1929c772f87743c08bdab33b67b",
+    "data/current_inputs.jsonl": "89f6e049f70f63f522a6a2d7b66936359a8972d0edcce64ff547a71e7411623e",
+    "verify_team_core.py": "0e85ef7a29bea69d97b78864d19153eb1bd6d51d833cd2095b7ef0df78fdd225"
+  },
+  "checks": [
+    "mmlu_pro: integer counts; independent per-item recount; within-bin sum 100%; evaluation n; core majority and coverage totals: PASS",
+    "math500: integer counts; independent per-item recount; within-bin sum 100%; evaluation n; core majority and coverage totals: PASS",
+    "gsm8k: integer counts; independent per-item recount; within-bin sum 100%; evaluation n; core majority and coverage totals: PASS"
+  ],
+  "benchmarks": {
+    "mmlu_pro": {
+      "label": "MMLU-Pro",
+      "totals": {
+        "n": 222,
+        "majority_correct": 150,
+        "covered_but_missed": 53,
+        "no_correct": 19
+      },
+      "bins": [
+        {
+          "label": "1",
+          "n": 36,
+          "majority_correct": 32,
+          "covered_but_missed": 0,
+          "no_correct": 4,
+          "percentages": {
+            "majority_correct": 88.88888888888889,
+            "covered_but_missed": 0.0,
+            "no_correct": 11.11111111111111
+          }
+        },
+        {
+          "label": "2-3",
+          "n": 86,
+          "majority_correct": 69,
+          "covered_but_missed": 14,
+          "no_correct": 3,
+          "percentages": {
+            "majority_correct": 80.23255813953489,
+            "covered_but_missed": 16.27906976744186,
+            "no_correct": 3.488372093023256
+          }
+        },
+        {
+          "label": "4-6",
+          "n": 90,
+          "majority_correct": 45,
+          "covered_but_missed": 33,
+          "no_correct": 12,
+          "percentages": {
+            "majority_correct": 50.0,
+            "covered_but_missed": 36.666666666666664,
+            "no_correct": 13.333333333333334
+          }
+        },
+        {
+          "label": "7-10",
+          "n": 10,
+          "majority_correct": 4,
+          "covered_but_missed": 6,
+          "no_correct": 0,
+          "percentages": {
+            "majority_correct": 40.0,
+            "covered_but_missed": 60.0,
+            "no_correct": 0.0
+          }
+        },
+        {
+          "label": ">10",
+          "n": 0,
+          "majority_correct": 0,
+          "covered_but_missed": 0,
+          "no_correct": 0,
+          "percentages": {
+            "majority_correct": null,
+            "covered_but_missed": null,
+            "no_correct": null
+          }
+        }
+      ]
+    },
+    "math500": {
+      "label": "MATH-500",
+      "totals": {
+        "n": 197,
+        "majority_correct": 125,
+        "covered_but_missed": 36,
+        "no_correct": 36
+      },
+      "bins": [
+        {
+          "label": "1",
+          "n": 27,
+          "majority_correct": 26,
+          "covered_but_missed": 0,
+          "no_correct": 1,
+          "percentages": {
+            "majority_correct": 96.29629629629629,
+            "covered_but_missed": 0.0,
+            "no_correct": 3.7037037037037037
+          }
+        },
+        {
+          "label": "2-3",
+          "n": 40,
+          "majority_correct": 34,
+          "covered_but_missed": 3,
+          "no_correct": 3,
+          "percentages": {
+            "majority_correct": 85.0,
+            "covered_but_missed": 7.5,
+            "no_correct": 7.5
+          }
+        },
+        {
+          "label": "4-6",
+          "n": 33,
+          "majority_correct": 24,
+          "covered_but_missed": 5,
+          "no_correct": 4,
+          "percentages": {
+            "majority_correct": 72.72727272727273,
+            "covered_but_missed": 15.151515151515152,
+            "no_correct": 12.121212121212121
+          }
+        },
+        {
+          "label": "7-10",
+          "n": 49,
+          "majority_correct": 30,
+          "covered_but_missed": 15,
+          "no_correct": 4,
+          "percentages": {
+            "majority_correct": 61.224489795918366,
+            "covered_but_missed": 30.612244897959183,
+            "no_correct": 8.16326530612245
+          }
+        },
+        {
+          "label": ">10",
+          "n": 48,
+          "majority_correct": 11,
+          "covered_but_missed": 13,
+          "no_correct": 24,
+          "percentages": {
+            "majority_correct": 22.916666666666668,
+            "covered_but_missed": 27.083333333333332,
+            "no_correct": 50.0
+          }
+        }
+      ]
+    },
+    "gsm8k": {
+      "label": "GSM8K",
+      "totals": {
+        "n": 150,
+        "majority_correct": 141,
+        "covered_but_missed": 7,
+        "no_correct": 2
+      },
+      "bins": [
+        {
+          "label": "1",
+          "n": 66,
+          "majority_correct": 66,
+          "covered_but_missed": 0,
+          "no_correct": 0,
+          "percentages": {
+            "majority_correct": 100.0,
+            "covered_but_missed": 0.0,
+            "no_correct": 0.0
+          }
+        },
+        {
+          "label": "2-3",
+          "n": 45,
+          "majority_correct": 44,
+          "covered_but_missed": 1,
+          "no_correct": 0,
+          "percentages": {
+            "majority_correct": 97.77777777777777,
+            "covered_but_missed": 2.2222222222222223,
+            "no_correct": 0.0
+          }
+        },
+        {
+          "label": "4-6",
+          "n": 26,
+          "majority_correct": 25,
+          "covered_but_missed": 1,
+          "no_correct": 0,
+          "percentages": {
+            "majority_correct": 96.15384615384616,
+            "covered_but_missed": 3.8461538461538463,
+            "no_correct": 0.0
+          }
+        },
+        {
+          "label": "7-10",
+          "n": 9,
+          "majority_correct": 5,
+          "covered_but_missed": 3,
+          "no_correct": 1,
+          "percentages": {
+            "majority_correct": 55.55555555555556,
+            "covered_but_missed": 33.333333333333336,
+            "no_correct": 11.11111111111111
+          }
+        },
+        {
+          "label": ">10",
+          "n": 4,
+          "majority_correct": 1,
+          "covered_but_missed": 2,
+          "no_correct": 1,
+          "percentages": {
+            "majority_correct": 25.0,
+            "covered_but_missed": 50.0,
+            "no_correct": 25.0
+          }
+        }
+      ]
+    }
+  },
+  "output_sha256": {
+    "figures/fragmentation_comic.pdf": "0996bc77b7b4804702dc2d6aeea97f5e58a3819d5d04c79b22127d30347bcb91",
+    "figures/fragmentation_comic.svg": "9692c713c492c5eb5497e36cc798ebf5f02404c323bf498add87f61093f616cd",
+    "figures/fragmentation_comic.png": "f249488d272d35a2f0d5e0345add03f50450780f33ba05eaae0ee0e1d64cfbae"
+  }
+}
